@@ -1,0 +1,179 @@
+{
+  "locations": [
+    {
+      "id": "node_0",
+      "node_id": 0,
+      "name": "North Gate",
+      "simulation_node": "J1_NW",
+      "frontend_coordinates": {"lat": 11.0495, "lng": 76.9415}
+    },
+    {
+      "id": "node_1",
+      "node_id": 1,
+      "name": "North Market",
+      "simulation_node": "J1_N",
+      "frontend_coordinates": {"lat": 11.0462, "lng": 76.9558}
+    },
+    {
+      "id": "node_2",
+      "node_id": 2,
+      "name": "University",
+      "simulation_node": "J1_NE",
+      "frontend_coordinates": {"lat": 11.0480, "lng": 76.9706}
+    },
+    {
+      "id": "node_3",
+      "node_id": 3,
+      "name": "North Park",
+      "simulation_node": "J2_NW",
+      "frontend_coordinates": {"lat": 11.0451, "lng": 76.9856}
+    },
+    {
+      "id": "node_4",
+      "node_id": 4,
+      "name": "East Gate",
+      "simulation_node": "J2",
+      "frontend_coordinates": {"lat": 11.0490, "lng": 76.9995}
+    },
+    {
+      "id": "node_5",
+      "node_id": 5,
+      "name": "West Market",
+      "simulation_node": "J1_W",
+      "frontend_coordinates": {"lat": 11.0365, "lng": 76.9398}
+    },
+    {
+      "id": "node_6",
+      "node_id": 6,
+      "name": "Civic Centre",
+      "simulation_node": "J1_C",
+      "frontend_coordinates": {"lat": 11.0320, "lng": 76.9540}
+    },
+    {
+      "id": "node_7",
+      "node_id": 7,
+      "name": "Hospital District",
+      "simulation_node": "J4",
+      "frontend_coordinates": {"lat": 11.0350, "lng": 76.9682}
+    },
+    {
+      "id": "node_8",
+      "node_id": 8,
+      "name": "Museum Row",
+      "simulation_node": "J3_W",
+      "frontend_coordinates": {"lat": 11.0315, "lng": 76.9827}
+    },
+    {
+      "id": "node_9",
+      "node_id": 9,
+      "name": "East Market",
+      "simulation_node": "J3_E",
+      "frontend_coordinates": {"lat": 11.0353, "lng": 76.9984}
+    },
+    {
+      "id": "node_10",
+      "node_id": 10,
+      "name": "River West",
+      "simulation_node": "J6_N",
+      "frontend_coordinates": {"lat": 11.0228, "lng": 76.9432}
+    },
+    {
+      "id": "node_11",
+      "node_id": 11,
+      "name": "Central Square",
+      "simulation_node": "J1_S",
+      "frontend_coordinates": {"lat": 11.0185, "lng": 76.9582}
+    },
+    {
+      "id": "node_12",
+      "node_id": 12,
+      "name": "Medical HQ",
+      "simulation_node": "J1",
+      "frontend_coordinates": {"lat": 11.0224, "lng": 76.9727}
+    },
+    {
+      "id": "node_13",
+      "node_id": 13,
+      "name": "City Hall",
+      "simulation_node": "J3",
+      "frontend_coordinates": {"lat": 11.0190, "lng": 76.9875}
+    },
+    {
+      "id": "node_14",
+      "node_id": 14,
+      "name": "River East",
+      "simulation_node": "J3_SE",
+      "frontend_coordinates": {"lat": 11.0232, "lng": 77.0014}
+    },
+    {
+      "id": "node_15",
+      "node_id": 15,
+      "name": "South Market",
+      "simulation_node": "J6_W",
+      "frontend_coordinates": {"lat": 11.0085, "lng": 76.9395}
+    },
+    {
+      "id": "node_16",
+      "node_id": 16,
+      "name": "Stadium",
+      "simulation_node": "J4_S",
+      "frontend_coordinates": {"lat": 11.0045, "lng": 76.9554}
+    },
+    {
+      "id": "node_17",
+      "node_id": 17,
+      "name": "Tech Park",
+      "simulation_node": "J5_N",
+      "frontend_coordinates": {"lat": 11.0088, "lng": 76.9702}
+    },
+    {
+      "id": "node_18",
+      "node_id": 18,
+      "name": "Garden Junction",
+      "simulation_node": "J5_E",
+      "frontend_coordinates": {"lat": 11.0049, "lng": 76.9844}
+    },
+    {
+      "id": "node_19",
+      "node_id": 19,
+      "name": "South East",
+      "simulation_node": "J5_SE",
+      "frontend_coordinates": {"lat": 11.0082, "lng": 76.9988}
+    },
+    {
+      "id": "node_20",
+      "node_id": 20,
+      "name": "West Depot",
+      "simulation_node": "J6",
+      "frontend_coordinates": {"lat": 10.9936, "lng": 76.9430}
+    },
+    {
+      "id": "node_21",
+      "node_id": 21,
+      "name": "Old Town",
+      "simulation_node": "J6_S",
+      "frontend_coordinates": {"lat": 10.9902, "lng": 76.9580}
+    },
+    {
+      "id": "node_22",
+      "node_id": 22,
+      "name": "Transit Hub",
+      "simulation_node": "J5_SW",
+      "frontend_coordinates": {"lat": 10.9934, "lng": 76.9726}
+    },
+    {
+      "id": "node_23",
+      "node_id": 23,
+      "name": "Lakeside Medical Centre",
+      "simulation_node": "J5",
+      "frontend_coordinates": {"lat": 10.9906, "lng": 76.9868}
+    },
+    {
+      "id": "node_24",
+      "node_id": 24,
+      "name": "South Gate",
+      "simulation_node": "J5_S",
+      "frontend_coordinates": {"lat": 10.9940, "lng": 77.0002}
+    }
+  ]
+}

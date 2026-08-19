@@ -1,0 +1,24 @@
+{
+  "profiles": {
+    "LOW": {
+      "active_vehicles": 2,
+      "spawn_rate_per_min": 10,
+      "base_speed_kmh": 45.0,
+      "queue_threshold": 3
+    },
+    "MEDIUM": {
+      "active_vehicles": 4,
+      "spawn_rate_per_min": 25,
+      "base_speed_kmh": 35.0,
+      "queue_threshold": 7
+    },
+    "HIGH": {
+      "active_vehicles": 4,
+      "spawn_rate_per_min": 50,
+      "base_speed_kmh": 20.0,
+      "queue_threshold": 12
+    }
+  },
+  "default_mode": "MEDIUM",
+  "simulation_step_ms": 100
+}

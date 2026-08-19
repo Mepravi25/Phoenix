@@ -1,0 +1,90 @@
+{
+  "roads": [
+    {
+      "id": "R_J1_J2",
+      "name": "MAIN ARTERIAL ROAD",
+      "from": "J1",
+      "to": "J2",
+      "distance_meters": 500.0,
+      "speed_limit_kmh": 60.0,
+      "lanes": 4,
+      "capacity_veh_per_min": 80
+    },
+    {
+      "id": "R_J1_J3",
+      "name": "RESIDENTIAL NORTH CONNECTOR",
+      "from": "J1",
+      "to": "J3",
+      "distance_meters": 557.0,
+      "speed_limit_kmh": 50.0,
+      "lanes": 2,
+      "capacity_veh_per_min": 40
+    },
+    {
+      "id": "R_J2_J4",
+      "name": "COMMERCIAL CORRIDOR",
+      "from": "J2",
+      "to": "J4",
+      "distance_meters": 707.0,
+      "speed_limit_kmh": 60.0,
+      "lanes": 2,
+      "capacity_veh_per_min": 50
+    },
+    {
+      "id": "R_J3_J4",
+      "name": "COMMERCIAL WEST CONNECTOR",
+      "from": "J3",
+      "to": "J4",
+      "distance_meters": 470.0,
+      "speed_limit_kmh": 50.0,
+      "lanes": 2,
+      "capacity_veh_per_min": 50
+    },
+    {
+      "id": "R_J3_J5",
+      "name": "HOSPITAL ARTERIAL CORRIDOR",
+      "from": "J3",
+      "to": "J5",
+      "distance_meters": 406.0,
+      "speed_limit_kmh": 60.0,
+      "lanes": 4,
+      "capacity_veh_per_min": 80
+    },
+    {
+      "id": "R_J4_J5",
+      "name": "SOUTH MEDICAL CONNECTOR",
+      "from": "J4",
+      "to": "J5",
+      "distance_meters": 447.0,
+      "speed_limit_kmh": 50.0,
+      "lanes": 2,
+      "capacity_veh_per_min": 50
+    },
+    {
+      "id": "R_J3_J6",
+      "name": "RESIDENTIAL SOUTH CONNECTOR",
+      "from": "J3",
+      "to": "J6",
+      "distance_meters": 696.0,
+      "speed_limit_kmh": 40.0,
+      "lanes": 2,
+      "capacity_veh_per_min": 40
+    },
+    {
+      "id": "R_J5_J6",
+      "name": "HOSPITAL RESIDENTIAL LOOP",
+      "from": "J5",
+      "to": "J6",
+      "distance_meters": 500.0,
+      "speed_limit_kmh": 50.0,
+      "lanes": 2,
+      "capacity_veh_per_min": 40
+    }
+  ],
+  "predefined_routes": {
+    "EMERGENCY_ROUTE_GOVT_HOSPITAL": ["J6", "J5", "GOVT_HOSPITAL_01"],
+    "EMERGENCY_ROUTE_PRIVATE_HOSPITAL": ["J6", "J5", "PRIVATE_HOSPITAL_01"],
+    "ARTERIAL_CORRIDOR_ROUTE": ["J1", "J2", "J4", "J5"],
+    "RESIDENTIAL_CROSS_CORRIDOR": ["J1", "J3", "J6"]
+  }
+}

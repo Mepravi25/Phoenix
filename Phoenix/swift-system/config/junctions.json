@@ -1,0 +1,64 @@
+{
+  "junctions": [
+    {
+      "id": "J1",
+      "name": "JUNCTION_01: North-West Arterial Hub (Residential & School Connector)",
+      "position": {"x": -250.0, "y": 250.0, "z": 0.0},
+      "signal_phases": ["NORTH_SOUTH", "EAST_WEST"],
+      "default_green_time": 15,
+      "min_green_time": 5,
+      "yellow_time": 3,
+      "connected_junctions": ["J2", "J4"]
+    },
+    {
+      "id": "J2",
+      "name": "JUNCTION_02: North-East Hub (Mall Gateway & Coastal Arterial)",
+      "position": {"x": 250.0, "y": 250.0, "z": 0.0},
+      "signal_phases": ["MAIN_CORRIDOR", "COMMERCIAL_BRANCH"],
+      "default_green_time": 15,
+      "min_green_time": 5,
+      "yellow_time": 3,
+      "connected_junctions": ["J1", "J3"]
+    },
+    {
+      "id": "J3",
+      "name": "JUNCTION_03: East Roundabout Hub (Bank 2 & Commercial East Junction)",
+      "position": {"x": 220.0, "y": -50.0, "z": 0.0},
+      "signal_phases": ["NORTH_SOUTH", "EAST_WEST"],
+      "default_green_time": 15,
+      "min_green_time": 5,
+      "yellow_time": 3,
+      "connected_junctions": ["J2", "J4", "J5"]
+    },
+    {
+      "id": "J4",
+      "name": "JUNCTION_04: Government Hospital Gateway (Commercial South Intersection)",
+      "position": {"x": -250.0, "y": -250.0, "z": 0.0},
+      "signal_phases": ["NORTH_SOUTH", "EAST_WEST"],
+      "default_green_time": 15,
+      "min_green_time": 5,
+      "yellow_time": 3,
+      "connected_junctions": ["J1", "J3", "J5", "J6"]
+    },
+    {
+      "id": "J5",
+      "name": "JUNCTION_05: South Highway Gateway (Private & Government Hospital Connector)",
+      "position": {"x": 150.0, "y": -450.0, "z": 0.0},
+      "signal_phases": ["MAIN_CORRIDOR", "HOSPITAL_ACCESS"],
+      "default_green_time": 15,
+      "min_green_time": 5,
+      "yellow_time": 3,
+      "connected_junctions": ["J3", "J4", "J6"]
+    },
+    {
+      "id": "J6",
+      "name": "JUNCTION_06: South-West Local Hub (Emergency Dispatch Depot)",
+      "position": {"x": -350.0, "y": -450.0, "z": 0.0},
+      "signal_phases": ["NORTH_SOUTH", "EAST_WEST"],
+      "default_green_time": 15,
+      "min_green_time": 5,
+      "yellow_time": 3,
+      "connected_junctions": ["J4", "J5"]
+    }
+  ]
+}
