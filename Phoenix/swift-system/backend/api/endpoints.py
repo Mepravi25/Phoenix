@@ -462,24 +462,26 @@ async def get_system_status():
     }
 
 
-@router.get("/traffic/snapshot")
-async def get_traffic_snapshot():
+def build_traffic_snapshot() -> Dict[str, Any]:
     telemetry = latest_telemetry if latest_telemetry else telemetry_engine.generate_payload()
     nodes = []
     for n in telemetry:
+        queue_len = n.get("queue_length", 0)
+        flush_t = n.get("flush_time", 0.0)
         nodes.append({
-            "id": n["node"],
-            "label": NODE_NAMES[n["node"]],
-            "queue_length": n["queue_length"],
-            "observed_flush_time": n["flush_time"],
-            "flush_time": n["flush_time"],
-            "light_phase": n["light_phase"],
-            "active_direction": n["active_direction"],
-            "phase_remaining_ticks": n["phase_remaining_ticks"],
+            "id": n.get("node", 0),
+            "label": NODE_NAMES[n.get("node", 0)] if 0 <= n.get("node", 0) < len(NODE_NAMES) else f"Node {n.get('node', 0)}",
+            "queue_length": queue_len,
+            "observed_flush_time": flush_t,
+            "flush_time": flush_t,
+            "light_phase": n.get("light_phase", "NS_GREEN"),
+            "active_direction": n.get("active_direction", "NS"),
+            "phase_remaining_ticks": n.get("phase_remaining_ticks", 5),
             "preemption_active": n.get("preemption_active", False),
             "offline": False,
-            "color": "#22c55e" if n["queue_length"] < 5 else ("#f59e0b" if n["queue_length"] < 10 else "#ef4444")
+            "color": "#22c55e" if queue_len < 5 else ("#f59e0b" if queue_len < 10 else "#ef4444")
         })
+    tick = telemetry[0].get("simulation_tick", 0) if telemetry else 0
     return {
         "nodes": nodes,
         "edges": [],
@@ -487,10 +489,16 @@ async def get_traffic_snapshot():
         "mqtt_connected": True,
         "traffic_available": True,
         "traffic_stale": False,
-        "simulation_tick": telemetry[0]["simulation_tick"] if telemetry else 0,
-        "traffic_version": 1,
+        "simulation_tick": tick,
+        "traffic_version": tick if tick > 0 else 1,
         "reservation_control_ready": True
     }
+
+
+@router.get("/traffic/snapshot")
+@router.get("/traffic")
+async def get_traffic_snapshot():
+    return build_traffic_snapshot()
 
 
 JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "long_string_here_like_phoenixhacks2026!")

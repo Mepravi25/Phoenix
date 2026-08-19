@@ -64,14 +64,10 @@ async def run_orchestration_loop():
             if corridor_cmds:
                 command_dispatcher.dispatch(sim_bridge, corridor_cmds)
 
-            # 5. Broadcast complete real-time telemetry frame to WebSocket clients
-            frame = {
-                "type": "TELEMETRY",
-                "telemetry": telemetry,
-                "orchestration": orch_result,
-                "decision": latest_decision.model_dump() if latest_decision else None
-            }
-            await ws_manager.broadcast(frame)
+            # 5. Broadcast complete real-time telemetry snapshot to WebSocket clients
+            from backend.api.endpoints import build_traffic_snapshot
+            snapshot = build_traffic_snapshot()
+            await ws_manager.broadcast(snapshot)
 
             await asyncio.sleep(0.5)  # 2 Hz update rate
         except asyncio.CancelledError:

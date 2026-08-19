@@ -407,7 +407,7 @@ export default function Dashboard() {
     }
 
     const loadFallbackSnapshot = () => {
-      api.get<TrafficSnapshot>('/api/traffic')
+      api.get<TrafficSnapshot>('/api/traffic/snapshot')
         .then((response) => {
           if (!disposed) {
             setTraffic(response.data)
