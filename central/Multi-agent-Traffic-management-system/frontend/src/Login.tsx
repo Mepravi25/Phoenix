@@ -3,7 +3,7 @@ import { Link as RouterLink, useNavigate } from 'react-router-dom'
 import { Alert, Box, Button, Link, Paper, TextField, Typography } from '@mui/material'
 import axios from 'axios'
 
-import api, { ACCESS_TOKEN_KEY, type TokenResponse } from './api'
+import api, { ACCESS_TOKEN_KEY, type TokenResponse, type CurrentUser } from './api'
 
 interface ValidationIssue {
   loc?: Array<string | number>
@@ -46,7 +46,12 @@ export default function Login() {
     try {
       const response = await api.post<TokenResponse>('/login', { username, password })
       localStorage.setItem(ACCESS_TOKEN_KEY, response.data.access_token)
-      navigate('/dashboard', { replace: true })
+      const userRes = await api.get<CurrentUser>('/api/me')
+      if (userRes.data?.role === 'admin') {
+        navigate('/admin', { replace: true })
+      } else {
+        navigate('/dashboard', { replace: true })
+      }
     } catch (requestError) {
       setError(requestErrorMessage(requestError, 'Unable to sign in. Please try again.'))
     } finally {

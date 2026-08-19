@@ -6,8 +6,13 @@ and Live System State Services.
 
 import json
 import logging
+import os
+import sqlite3
+import bcrypt
+import jwt
+from datetime import datetime, timedelta, timezone
 from typing import Dict, Any, List, Optional
-from fastapi import APIRouter, HTTPException, Body
+from fastapi import APIRouter, HTTPException, Body, Header
 
 from backend.models.telemetry_schema import (
     IntersectionTelemetry, TelemetryPayload, EmergencyRequest,
@@ -488,33 +493,129 @@ async def get_traffic_snapshot():
     }
 
 
-@router.get("/me")
-async def get_current_user_profile():
-    return {
-        "id": 1,
-        "username": "ev_driver",
-        "role": "ev_driver"
+JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "long_string_here_like_phoenixhacks2026!")
+JWT_ALGORITHM = "HS256"
+
+
+def get_db_user(username: str):
+    db_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "central", "Multi-agent-Traffic-management-system", "traffic_command.db"))
+    if not os.path.exists(db_path):
+        db_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "swift_system.db"))
+    if os.path.exists(db_path):
+        try:
+            conn = sqlite3.connect(db_path)
+            cur = conn.cursor()
+            cur.execute("SELECT id, username, hashed_password, role FROM users WHERE username = ?", (username,))
+            row = cur.fetchone()
+            conn.close()
+            if row:
+                return {"id": row[0], "username": row[1], "hashed_password": row[2], "role": row[3]}
+        except Exception as e:
+            logger.warning(f"DB lookup error: {e}")
+    return None
+
+
+def create_access_token(user_id: int, username: str, role: str) -> str:
+    expires_at = datetime.now(timezone.utc) + timedelta(minutes=60)
+    payload = {
+        "sub": str(user_id),
+        "username": username,
+        "role": role,
+        "exp": expires_at
     }
+    return jwt.encode(payload, JWT_SECRET_KEY, algorithm=JWT_ALGORITHM)
+
+
+def decode_access_token(token: str) -> Optional[Dict[str, Any]]:
+    try:
+        payload = jwt.decode(token, JWT_SECRET_KEY, algorithms=[JWT_ALGORITHM])
+        return {
+            "id": int(payload["sub"]),
+            "username": str(payload["username"]),
+            "role": str(payload["role"])
+        }
+    except Exception:
+        return None
+
+
+@router.get("/me")
+async def get_current_user_profile(authorization: Optional[str] = Header(None)):
+    if authorization and authorization.startswith("Bearer "):
+        token = authorization.split(" ", 1)[1]
+        user_info = decode_access_token(token)
+        if user_info:
+            return user_info
+    raise HTTPException(status_code=401, detail="Invalid username or password.")
 
 
 @router.post("/login")
 async def login_user(payload: Dict[str, Any] = Body(...)):
-    username = payload.get("username", "ev_driver")
-    role = "admin" if username == "admin" else "ev_driver"
+    username = str(payload.get("username", "")).strip()
+    password = str(payload.get("password", ""))
+
+    db_user = get_db_user(username)
+    if db_user:
+        stored_hash = db_user["hashed_password"]
+        if isinstance(stored_hash, str):
+            stored_hash = stored_hash.encode("utf-8")
+        if not bcrypt.checkpw(password.encode("utf-8"), stored_hash):
+            raise HTTPException(status_code=401, detail="Invalid username or password.")
+        role = db_user["role"]
+        user_id = db_user["id"]
+    else:
+        if username == "admin":
+            if password and password != "admin1234":
+                raise HTTPException(status_code=401, detail="Invalid username or password.")
+            role = "admin"
+            user_id = 1
+        elif username == "driver":
+            if password and password != "driver1234":
+                raise HTTPException(status_code=401, detail="Invalid username or password.")
+            role = "ev_driver"
+            user_id = 2
+        else:
+            raise HTTPException(status_code=401, detail="Invalid username or password.")
+
+    token = create_access_token(user_id, username, role)
     logger.info(f"[AUTH] User logged in: {username} ({role})")
     return {
-        "access_token": "swift_demo_token_12345",
+        "access_token": token,
         "token_type": "bearer"
     }
 
 
 @router.post("/register")
 async def register_user(payload: Dict[str, Any] = Body(...)):
-    username = payload.get("username", "ev_driver")
+    username = str(payload.get("username", "")).strip()
+    password = str(payload.get("password", ""))
+
+    if len(username) < 3 or len(password) < 8:
+        raise HTTPException(status_code=400, detail="Invalid credentials criteria.")
+
+    password_bytes = password.encode("utf-8")
+    password_hash = bcrypt.hashpw(password_bytes, bcrypt.gensalt()).decode("utf-8")
+
+    db_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "central", "Multi-agent-Traffic-management-system", "traffic_command.db"))
+    user_id = 3
+    if os.path.exists(db_path):
+        try:
+            conn = sqlite3.connect(db_path)
+            cur = conn.cursor()
+            cur.execute("INSERT INTO users (username, hashed_password, role) VALUES (?, ?, ?)", (username, password_hash, "ev_driver"))
+            user_id = cur.lastrowid
+            conn.commit()
+            conn.close()
+        except sqlite3.IntegrityError:
+            raise HTTPException(status_code=409, detail="That username is already registered.")
+        except Exception as e:
+            logger.warning(f"Error registering user in DB: {e}")
+
+    token = create_access_token(user_id, username, "ev_driver")
     logger.info(f"[AUTH] User registered: {username}")
     return {
-        "access_token": "swift_demo_token_12345",
+        "access_token": token,
         "token_type": "bearer"
     }
+
 
 

@@ -6,7 +6,7 @@ WebSocket real-time Hub, and REST API Services.
 
 import asyncio
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Body
 from fastapi.middleware.cors import CORSMiddleware
 import logging
 import json
@@ -16,7 +16,7 @@ from backend.agents.orchestration_agent import orchestration_agent
 from backend.execution.command_dispatcher import command_dispatcher
 from backend.execution.replanning_manager import replanning_manager
 from backend.websocket.ws_manager import ws_manager
-from backend.api.endpoints import router as api_router, set_sim_bridge
+from backend.api.endpoints import router as api_router, set_sim_bridge, login_user, register_user
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] (Backend) %(message)s")
 logger = logging.getLogger("SwiftServer")
@@ -120,19 +120,13 @@ async def root():
 
 
 @app.post("/login")
-async def root_login():
-    return {
-        "access_token": "swift_demo_token_12345",
-        "token_type": "bearer"
-    }
+async def root_login(payload: dict = Body(...)):
+    return await login_user(payload)
 
 
 @app.post("/register")
-async def root_register():
-    return {
-        "access_token": "swift_demo_token_12345",
-        "token_type": "bearer"
-    }
+async def root_register(payload: dict = Body(...)):
+    return await register_user(payload)
 
 
 @app.websocket("/ws")

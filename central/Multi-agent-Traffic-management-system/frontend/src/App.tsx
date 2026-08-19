@@ -18,6 +18,7 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<ProtectedDashboard />} />
+        <Route path="/admin" element={<ProtectedDashboard />} />
         <Route path="*" element={<Navigate replace to="/dashboard" />} />
       </Routes>
     </BrowserRouter>

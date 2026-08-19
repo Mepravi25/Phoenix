@@ -343,7 +343,12 @@ export default function Dashboard() {
     let active = true
     api.get<CurrentUser>('/api/me')
       .then((response) => {
-        if (active) setCurrentUser(response.data)
+        if (active) {
+          setCurrentUser(response.data)
+          if (window.location.pathname === '/admin' && response.data.role !== 'admin') {
+            navigate('/dashboard', { replace: true })
+          }
+        }
       })
       .catch(() => {
         localStorage.removeItem(ACCESS_TOKEN_KEY)
@@ -826,7 +831,7 @@ function AdminDashboard({
   const [isHeatmapLoading, setIsHeatmapLoading] = useState(false)
   const [heatmapError, setHeatmapError] = useState<string | null>(null)
   const telemetryError = trafficStatus?.ingest_error ?? trafficStatus?.mqtt_error
-  const offlineNodes = new Set(traffic?.nodes.filter((node) => node.offline).map((node) => node.id) ?? [])
+  const offlineNodes = new Set((traffic?.nodes ?? []).filter((node) => node.offline).map((node) => node.id))
   const isSelectedNodeOffline = offlineNodes.has(blackoutNode)
   const staleMessage = !trafficStatus?.traffic_available
     ? 'Waiting for the intersection simulator to publish its first complete 25-node snapshot.'
