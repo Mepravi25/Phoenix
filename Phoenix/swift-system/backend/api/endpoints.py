@@ -482,6 +482,7 @@ def build_traffic_snapshot() -> Dict[str, Any]:
             "color": "#22c55e" if queue_len < 5 else ("#f59e0b" if queue_len < 10 else "#ef4444")
         })
     tick = telemetry[0].get("simulation_tick", 0) if telemetry else 0
+    amb_data = sim_bridge_ref.get_telemetry().get("ambulance") if sim_bridge_ref else None
     return {
         "nodes": nodes,
         "edges": [],
@@ -491,7 +492,8 @@ def build_traffic_snapshot() -> Dict[str, Any]:
         "traffic_stale": False,
         "simulation_tick": tick,
         "traffic_version": tick if tick > 0 else 1,
-        "reservation_control_ready": True
+        "reservation_control_ready": True,
+        "ambulance": amb_data
     }
 
 

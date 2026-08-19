@@ -465,8 +465,100 @@ export default function Dashboard() {
     }
   }, [isAdmin])
 
-  // Client-side local movement timer loop removed to ensure the Webots simulation
-  // is the sole source of vehicle state and route analysis.
+  // Continuous multi-intersection ambulance movement & re-routing progression loop
+  useEffect(() => {
+    if (!trip || trip.status !== 'active') return undefined
+
+    const path = trip.route.path
+    if (path.length <= 1) {
+      setTrip((prev) => (prev ? { ...prev, status: 'arrived' } : null))
+      return undefined
+    }
+
+    const nextNode = path[1]
+    const waitSec = signalWaitSeconds(trip.route)
+    const travelSec = roadTravelSeconds(trip.route)
+
+    let timer: number | undefined
+
+    if (trip.motionStage === 'waiting_for_signal') {
+      const delay = realTimeDelayMilliseconds(Math.max(0.5, waitSec))
+      timer = window.setTimeout(() => {
+        setTrip((prev) => (prev ? { ...prev, motionStage: 'travelling' } : null))
+      }, delay)
+    } else if (trip.motionStage === 'travelling') {
+      const delay = realTimeDelayMilliseconds(Math.max(0.8, travelSec))
+      timer = window.setTimeout(() => {
+        const legTotal = waitSec + travelSec
+        const historyEntry: RouteHistoryEntry = {
+          currentLocation: trip.currentLocation,
+          nextLocation: nextNode,
+          route: path,
+          totalSeconds: legTotal,
+          roadTravelSeconds: travelSec,
+          signalWaitSeconds: waitSec,
+          trafficVersion: trip.route.traffic_version,
+          lightPhase: trip.route.segments?.[0]?.source_light_phase,
+        }
+
+        setRouteHistory((prev) => [...prev, historyEntry])
+
+        if (nextNode === trip.destination) {
+          setTrip((prev) => (prev ? { ...prev, currentLocation: nextNode, status: 'arrived' } : null))
+        } else {
+          setIsReplanning(true)
+          const apiSource = nodeName(nextNode)
+          const apiDest = nodeName(trip.destination)
+
+          api
+            .post<RouteResponse>('/api/route', {
+              start: nextNode,
+              end: trip.destination,
+              source: apiSource,
+              destination: apiDest,
+            })
+            .then((response) => {
+              if (response.data.success !== false) {
+                setTrip({
+                  currentLocation: nextNode,
+                  destination: trip.destination,
+                  route: response.data,
+                  status: response.data.path.length <= 1 ? 'arrived' : 'active',
+                  motionStage: motionStageForRoute(response.data),
+                  vehicleType: trip.vehicleType,
+                })
+              } else {
+                const fallbackPath = path.slice(1)
+                setTrip({
+                  ...trip,
+                  currentLocation: nextNode,
+                  route: { ...trip.route, path: fallbackPath },
+                  status: fallbackPath.length <= 1 ? 'arrived' : 'active',
+                  motionStage: 'waiting_for_signal',
+                })
+              }
+            })
+            .catch(() => {
+              const fallbackPath = path.slice(1)
+              setTrip({
+                ...trip,
+                currentLocation: nextNode,
+                route: { ...trip.route, path: fallbackPath },
+                status: fallbackPath.length <= 1 ? 'arrived' : 'active',
+                motionStage: 'waiting_for_signal',
+              })
+            })
+            .finally(() => {
+              setIsReplanning(false)
+            })
+        }
+      }, delay)
+    }
+
+    return () => {
+      if (timer !== undefined) window.clearTimeout(timer)
+    }
+  }, [trip])
 
   const submitRoute = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()

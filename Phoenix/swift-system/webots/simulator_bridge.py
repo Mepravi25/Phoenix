@@ -26,12 +26,15 @@ class SwiftWebotsSimulator:
         self.time_step = 0.5  # seconds per tick
         self.is_running = True
 
-        # Junctions state (J1, J2, J3, J4)
-        self.junctions: Dict[str, Dict[str, Any]] = {
-            "J1": {
-                "id": "J1",
-                "pos": {"x": -100.0, "y": -100.0},
-                "signal_state": "GREEN_EW",  # GREEN_EW or GREEN_NS or PRIORITY
+        # Junctions state (J1..J25 for 5x5 grid)
+        self.junctions: Dict[str, Dict[str, Any]] = {}
+        for node_id in range(25):
+            r, c = node_id // 5, node_id % 5
+            j_id = f"J{node_id + 1}"
+            self.junctions[j_id] = {
+                "id": j_id,
+                "pos": {"x": round((c - 2) * 100.0, 2), "y": round((r - 2) * 100.0, 2)},
+                "signal_state": "GREEN_NS" if (r + c) % 2 == 0 else "GREEN_EW",
                 "queue_length": 3,
                 "vehicle_count": 8,
                 "avg_speed": 40.0,
@@ -40,47 +43,7 @@ class SwiftWebotsSimulator:
                 "congestion_level": "LOW",
                 "priority_active": False,
                 "remaining_green": 12.0
-            },
-            "J2": {
-                "id": "J2",
-                "pos": {"x": 100.0, "y": -100.0},
-                "signal_state": "GREEN_NS",
-                "queue_length": 5,
-                "vehicle_count": 12,
-                "avg_speed": 35.0,
-                "lane_occupancy": 0.50,
-                "traffic_density": 0.55,
-                "congestion_level": "MEDIUM",
-                "priority_active": False,
-                "remaining_green": 15.0
-            },
-            "J3": {
-                "id": "J3",
-                "pos": {"x": -100.0, "y": 100.0},
-                "signal_state": "GREEN_EW",
-                "queue_length": 2,
-                "vehicle_count": 5,
-                "avg_speed": 45.0,
-                "lane_occupancy": 0.25,
-                "traffic_density": 0.30,
-                "congestion_level": "LOW",
-                "priority_active": False,
-                "remaining_green": 10.0
-            },
-            "J4": {
-                "id": "J4",
-                "pos": {"x": 100.0, "y": 100.0},
-                "signal_state": "GREEN_NS",
-                "queue_length": 4,
-                "vehicle_count": 9,
-                "avg_speed": 38.0,
-                "lane_occupancy": 0.40,
-                "traffic_density": 0.45,
-                "congestion_level": "LOW",
-                "priority_active": False,
-                "remaining_green": 14.0
             }
-        }
 
         # Ambulance physical state
         self.ambulance = {
@@ -88,14 +51,14 @@ class SwiftWebotsSimulator:
             "urgency_level": "LEVEL_3",
             "start_junction": "J1",
             "destination": "HOSPITAL_CENTRAL",
-            "dest_junction": "J4",
+            "dest_junction": "J8",
             "current_junction": "J1",
             "current_road": "R_J1_J2",
-            "position": {"x": -100.0, "y": -100.0},
+            "position": {"x": -200.0, "y": -200.0},
             "speed": 0.0,  # km/h
             "target_speed": 60.0,
             "heading": 0.0,  # degrees
-            "route": ["J1", "J2", "J4"],
+            "route": ["J1", "J2", "J3", "J8"],
             "route_progress": 0.0,  # 0.0 to 1.0 along current road
             "current_segment_index": 0,
             "stopped_in_traffic": False,
@@ -108,13 +71,19 @@ class SwiftWebotsSimulator:
         # Dynamic Incidents / Accidents
         self.active_incidents: Dict[str, Dict[str, Any]] = {}
 
-        # Road segments geometry & distance
-        self.roads = {
-            "R_J1_J2": {"from": "J1", "to": "J2", "length": 200.0},
-            "R_J2_J4": {"from": "J2", "to": "J4", "length": 200.0},
-            "R_J1_J3": {"from": "J1", "to": "J3", "length": 200.0},
-            "R_J3_J4": {"from": "J3", "to": "J4", "length": 200.0}
-        }
+        # Road segments geometry & distance across 5x5 grid
+        self.roads: Dict[str, Dict[str, Any]] = {}
+        for node_id in range(25):
+            r, c = node_id // 5, node_id % 5
+            j_curr = f"J{node_id + 1}"
+            if c < 4:
+                j_east = f"J{node_id + 2}"
+                self.roads[f"R_{j_curr}_{j_east}"] = {"from": j_curr, "to": j_east, "length": 200.0}
+                self.roads[f"R_{j_east}_{j_curr}"] = {"from": j_east, "to": j_curr, "length": 200.0}
+            if r < 4:
+                j_south = f"J{node_id + 6}"
+                self.roads[f"R_{j_curr}_{j_south}"] = {"from": j_curr, "to": j_south, "length": 200.0}
+                self.roads[f"R_{j_south}_{j_curr}"] = {"from": j_south, "to": j_curr, "length": 200.0}
 
         # System Mode: BASELINE vs SWIFT
         self.orchestration_mode = "SWIFT"
@@ -152,7 +121,8 @@ class SwiftWebotsSimulator:
         if self.ambulance["route"] != new_route:
             logger.info(f"AMBULANCE ROUTE UPDATED: {self.ambulance['route']} -> {new_route}")
             self.ambulance["route"] = new_route
-            # Recalculate current segment index
+            self.ambulance["has_arrived"] = False
+            self.ambulance["active"] = True
             curr_j = self.ambulance["current_junction"]
             if curr_j in new_route:
                 idx = new_route.index(curr_j)
@@ -160,6 +130,16 @@ class SwiftWebotsSimulator:
                     self.ambulance["current_segment_index"] = idx
                     next_j = new_route[idx + 1]
                     self.ambulance["current_road"] = f"R_{curr_j}_{next_j}"
+                else:
+                    self.ambulance["current_segment_index"] = max(0, len(new_route) - 1)
+            else:
+                if len(new_route) > 0:
+                    self.ambulance["current_junction"] = new_route[0]
+                    self.ambulance["current_segment_index"] = 0
+                    if new_route[0] in self.junctions:
+                        self.ambulance["position"] = dict(self.junctions[new_route[0]]["pos"])
+                    if len(new_route) > 1:
+                        self.ambulance["current_road"] = f"R_{new_route[0]}_{new_route[1]}"
 
     def step(self):
         """Advance physical simulation state by self.time_step seconds"""
