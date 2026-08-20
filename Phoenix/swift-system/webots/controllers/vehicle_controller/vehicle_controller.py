@@ -24,6 +24,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from road_network import (
     ROAD_NETWORK,
     VEHICLE_ROUTES,
+    DETERMINISTIC_VEHICLE_SPAWNS,
     read_signal_state,
     get_distance_to_stop_line,
     validate_road_corridor,
@@ -58,6 +59,7 @@ ROAD_SURFACE_Z = 0.10
 VEHICLE_BOTTOM_OFFSET = 0.32
 VEHICLE_LENGTH = 4.4
 MIN_FOLLOWING_DISTANCE = 4.0
+MIN_VEHICLE_GAP = 5.0  # meters visual bumper-to-bumper safe spacing
 
 ALL_VEHICLE_IDS = [
     "CAR_001", "CAR_002", "CAR_003", "CAR_004", "CAR_005",
@@ -90,7 +92,6 @@ def normalize_angle(angle: float) -> float:
     while angle < -math.pi:
         angle += 2.0 * math.pi
     return angle
-
 
 
 def update_heading(current_heading: float, target_heading: float, max_turn_rate: float, dt: float) -> float:
@@ -146,28 +147,9 @@ VEHICLE_CONFIGS = {
     "AMBULANCE_001": {"type": "AMBULANCE", "normal_speed": 8.5, "turn_speed": 5.0, "accel_rate": 4.5, "decel_rate": 8.0, "length": 5.5, "width": 2.2},
 }
 
+# Valid initial spawn positions directly on LHT road waypoints (calculated deterministically with zero overlap)
+VEHICLE_SPAWNS = DETERMINISTIC_VEHICLE_SPAWNS
 
-# Valid initial spawn positions directly on LHT road waypoints
-VEHICLE_SPAWNS = {
-    "CAR_001": {"x": -250.0, "y": 253.5, "heading": 0.0},
-    "CAR_002": {"x": -246.5, "y": 250.0, "heading": -1.5708},
-    "CAR_003": {"x": -248.43, "y": -246.87, "heading": -0.4636},
-    "CAR_004": {"x": -252.47, "y": 247.53, "heading": 2.3562},
-    "CAR_005": {"x": 247.53, "y": 252.47, "heading": 0.7854},
-    "CAR_006": {"x": 219.72, "y": -46.51, "heading": 0.0792},
-    "CAR_007": {"x": -251.35, "y": -253.23, "heading": 2.7468},
-    "CAR_008": {"x": 153.28, "y": -451.23, "heading": -1.9296},
-    "CAR_009": {"x": -150.0, "y": 253.5, "heading": 0.0},
-    "CAR_010": {"x": -251.37, "y": -246.78, "heading": 0.4023},
-
-    "BIKE_001": {"x": 50.0, "y": 253.5, "heading": 0.0},
-    "BIKE_002": {"x": -246.5, "y": 50.0, "heading": -1.5708},
-    "BIKE_003": {"x": -88.43, "y": -326.87, "heading": -0.4636},
-    "BIKE_004": {"x": 247.48, "y": 189.65, "heading": -1.6705},
-    "BIKE_005": {"x": -50.0, "y": 253.5, "heading": 0.0},
-
-    "AMBULANCE_001": {"x": -248.43, "y": -246.87, "heading": -0.4636},
-}
 
 
 class NormalVehicleController:

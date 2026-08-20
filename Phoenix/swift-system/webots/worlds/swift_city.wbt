@@ -13690,7 +13690,7 @@ Solid {
 # DENSE URBAN GREENERY & FOREST BUFFERS (1200+ Trees)
 # ==========================================
 Solid {
-  translation 200 390 0.10
+  translation 188.91 394.59 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13704,7 +13704,7 @@ Solid {
 }
 
 Solid {
-  translation 200 405 0.10
+  translation 188.91 409.59 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13718,7 +13718,7 @@ Solid {
 }
 
 Solid {
-  translation 200 420 0.10
+  translation 188.91 424.59 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13732,7 +13732,7 @@ Solid {
 }
 
 Solid {
-  translation 200 435 0.10
+  translation 188.91 439.59 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13746,7 +13746,7 @@ Solid {
 }
 
 Solid {
-  translation 200 450 0.10
+  translation 188.91 454.59 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13760,7 +13760,7 @@ Solid {
 }
 
 Solid {
-  translation 200 465 0.10
+  translation 183.37 458.11 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13774,7 +13774,7 @@ Solid {
 }
 
 Solid {
-  translation 200 480 0.10
+  translation 188.91 484.59 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13788,7 +13788,7 @@ Solid {
 }
 
 Solid {
-  translation 215 390 0.10
+  translation 210.41 378.91 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13802,7 +13802,7 @@ Solid {
 }
 
 Solid {
-  translation 215 405 0.10
+  translation 189.00 405.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13816,7 +13816,7 @@ Solid {
 }
 
 Solid {
-  translation 215 420 0.10
+  translation 189.00 420.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13830,7 +13830,7 @@ Solid {
 }
 
 Solid {
-  translation 215 435 0.10
+  translation 189.00 435.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13844,7 +13844,7 @@ Solid {
 }
 
 Solid {
-  translation 215 450 0.10
+  translation 189.00 450.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13858,7 +13858,7 @@ Solid {
 }
 
 Solid {
-  translation 215 465 0.10
+  translation 187.28 453.52 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13872,7 +13872,7 @@ Solid {
 }
 
 Solid {
-  translation 215 480 0.10
+  translation 215.00 502.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13886,7 +13886,7 @@ Solid {
 }
 
 Solid {
-  translation 230 390 0.10
+  translation 225.41 378.91 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13900,7 +13900,7 @@ Solid {
 }
 
 Solid {
-  translation 230 405 0.10
+  translation 230.00 379.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13913,64 +13913,16 @@ Solid {
   name "TREE_PARK_0016"
 }
 
-Solid {
-  translation 230 420 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0017"
-}
+
+
+
+
+
+
+
 
 Solid {
-  translation 230 435 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0018"
-}
-
-Solid {
-  translation 230 450 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0019"
-}
-
-Solid {
-  translation 230 465 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0020"
-}
-
-Solid {
-  translation 230 480 0.10
+  translation 230.00 502.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13984,7 +13936,7 @@ Solid {
 }
 
 Solid {
-  translation 245 390 0.10
+  translation 232.27 377.27 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -13997,50 +13949,14 @@ Solid {
   name "TREE_PARK_0022"
 }
 
-Solid {
-  translation 245 405 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0023"
-}
+
+
+
+
+
 
 Solid {
-  translation 245 420 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0024"
-}
-
-Solid {
-  translation 245 465 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0025"
-}
-
-Solid {
-  translation 245 480 0.10
+  translation 235.05 504.02 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14054,7 +13970,7 @@ Solid {
 }
 
 Solid {
-  translation 260 390 0.10
+  translation 264.59 378.91 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14068,7 +13984,7 @@ Solid {
 }
 
 Solid {
-  translation 260 405 0.10
+  translation 271.48 377.28 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14081,22 +13997,10 @@ Solid {
   name "TREE_PARK_0028"
 }
 
-Solid {
-  translation 260 465 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0029"
-}
+
 
 Solid {
-  translation 260 480 0.10
+  translation 269.95 504.02 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14110,7 +14014,7 @@ Solid {
 }
 
 Solid {
-  translation 275 390 0.10
+  translation 270.41 378.91 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14124,7 +14028,7 @@ Solid {
 }
 
 Solid {
-  translation 275 405 0.10
+  translation 275.00 379.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14137,36 +14041,12 @@ Solid {
   name "TREE_PARK_0032"
 }
 
-Solid {
-  translation 275 420 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0033"
-}
+
+
+
 
 Solid {
-  translation 275 465 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0034"
-}
-
-Solid {
-  translation 275 480 0.10
+  translation 275.00 502.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14180,7 +14060,7 @@ Solid {
 }
 
 Solid {
-  translation 290 390 0.10
+  translation 285.41 378.91 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14194,7 +14074,7 @@ Solid {
 }
 
 Solid {
-  translation 290 405 0.10
+  translation 290.00 379.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14207,64 +14087,16 @@ Solid {
   name "TREE_PARK_0037"
 }
 
-Solid {
-  translation 290 420 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0038"
-}
+
+
+
+
+
+
+
 
 Solid {
-  translation 290 435 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0039"
-}
-
-Solid {
-  translation 290 450 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0040"
-}
-
-Solid {
-  translation 290 465 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0041"
-}
-
-Solid {
-  translation 290 480 0.10
+  translation 290.00 502.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14278,7 +14110,7 @@ Solid {
 }
 
 Solid {
-  translation 305 390 0.10
+  translation 300.41 378.91 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14292,7 +14124,7 @@ Solid {
 }
 
 Solid {
-  translation 305 405 0.10
+  translation 331.00 405.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14306,7 +14138,7 @@ Solid {
 }
 
 Solid {
-  translation 305 420 0.10
+  translation 331.00 420.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14320,7 +14152,7 @@ Solid {
 }
 
 Solid {
-  translation 305 435 0.10
+  translation 331.00 435.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14333,22 +14165,10 @@ Solid {
   name "TREE_PARK_0046"
 }
 
-Solid {
-  translation 305 450 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
-    Transform {
-      translation 0 0 4.29
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.25 } }
-      ]
-    }
-  ]
-  name "TREE_PARK_0047"
-}
+
 
 Solid {
-  translation 305 465 0.10
+  translation 331.00 465.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -14362,7 +14182,7 @@ Solid {
 }
 
 Solid {
-  translation 305 480 0.10
+  translation 305.00 502.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.680000000000001 radius 0.45499999999999996 } }
     Transform {
@@ -16168,7 +15988,7 @@ Solid {
 }
 
 Solid {
-  translation -970 -10 0.10
+  translation -979.24 -6.17 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -16714,7 +16534,7 @@ Solid {
 }
 
 Solid {
-  translation -910 -10 0.10
+  translation -911.77 -11.77 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17106,7 +16926,7 @@ Solid {
 }
 
 Solid {
-  translation -850 -670 0.10
+  translation -835.00 -670.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17120,7 +16940,7 @@ Solid {
 }
 
 Solid {
-  translation -850 -610 0.10
+  translation -835.00 -610.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17134,7 +16954,7 @@ Solid {
 }
 
 Solid {
-  translation -850 -550 0.10
+  translation -835.00 -550.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17148,7 +16968,7 @@ Solid {
 }
 
 Solid {
-  translation -850 -490 0.10
+  translation -835.00 -490.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17162,7 +16982,7 @@ Solid {
 }
 
 Solid {
-  translation -850 -430 0.10
+  translation -835.00 -430.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17176,7 +16996,7 @@ Solid {
 }
 
 Solid {
-  translation -850 -370 0.10
+  translation -835.00 -370.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17190,7 +17010,7 @@ Solid {
 }
 
 Solid {
-  translation -850 -310 0.10
+  translation -835.00 -310.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17204,7 +17024,7 @@ Solid {
 }
 
 Solid {
-  translation -850 -250 0.10
+  translation -835.00 -250.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17218,7 +17038,7 @@ Solid {
 }
 
 Solid {
-  translation -850 -190 0.10
+  translation -835.00 -190.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17232,7 +17052,7 @@ Solid {
 }
 
 Solid {
-  translation -850 -130 0.10
+  translation -835.00 -130.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17246,7 +17066,7 @@ Solid {
 }
 
 Solid {
-  translation -850 -70 0.10
+  translation -835.00 -70.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17260,7 +17080,7 @@ Solid {
 }
 
 Solid {
-  translation -850 -10 0.10
+  translation -863.86 -15.74 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17274,7 +17094,7 @@ Solid {
 }
 
 Solid {
-  translation -850 50 0.10
+  translation -835.00 50.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17288,7 +17108,7 @@ Solid {
 }
 
 Solid {
-  translation -850 110 0.10
+  translation -835.00 110.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17302,7 +17122,7 @@ Solid {
 }
 
 Solid {
-  translation -850 170 0.10
+  translation -835.00 170.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17316,7 +17136,7 @@ Solid {
 }
 
 Solid {
-  translation -850 230 0.10
+  translation -835.00 230.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17330,7 +17150,7 @@ Solid {
 }
 
 Solid {
-  translation -850 290 0.10
+  translation -835.00 290.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17344,7 +17164,7 @@ Solid {
 }
 
 Solid {
-  translation -850 350 0.10
+  translation -835.00 350.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17358,7 +17178,7 @@ Solid {
 }
 
 Solid {
-  translation -850 410 0.10
+  translation -835.00 410.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17372,7 +17192,7 @@ Solid {
 }
 
 Solid {
-  translation -850 470 0.10
+  translation -835.00 470.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17386,7 +17206,7 @@ Solid {
 }
 
 Solid {
-  translation -850 530 0.10
+  translation -835.00 530.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17400,7 +17220,7 @@ Solid {
 }
 
 Solid {
-  translation -850 590 0.10
+  translation -835.00 590.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17414,7 +17234,7 @@ Solid {
 }
 
 Solid {
-  translation -850 650 0.10
+  translation -835.00 650.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17806,7 +17626,7 @@ Solid {
 }
 
 Solid {
-  translation -790 -10 0.10
+  translation -791.53 -13.70 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -17974,7 +17794,7 @@ Solid {
 }
 
 Solid {
-  translation -790 710 0.10
+  translation -789.04 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -18352,7 +18172,7 @@ Solid {
 }
 
 Solid {
-  translation -730 -10 0.10
+  translation -731.53 -13.70 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -18520,7 +18340,7 @@ Solid {
 }
 
 Solid {
-  translation -730 710 0.10
+  translation -730.00 712.50 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -18702,7 +18522,7 @@ Solid {
 }
 
 Solid {
-  translation -670 -850 0.10
+  translation -664.26 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -18842,7 +18662,7 @@ Solid {
 }
 
 Solid {
-  translation -670 -250 0.10
+  translation -670.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -18898,7 +18718,7 @@ Solid {
 }
 
 Solid {
-  translation -670 -10 0.10
+  translation -671.53 -13.70 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -19066,7 +18886,7 @@ Solid {
 }
 
 Solid {
-  translation -670 710 0.10
+  translation -669.04 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -19234,7 +19054,7 @@ Solid {
 }
 
 Solid {
-  translation -610 -850 0.10
+  translation -604.26 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -19346,7 +19166,7 @@ Solid {
 }
 
 Solid {
-  translation -610 -250 0.10
+  translation -610.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -19528,7 +19348,7 @@ Solid {
 }
 
 Solid {
-  translation -610 710 0.10
+  translation -609.04 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -19682,7 +19502,7 @@ Solid {
 }
 
 Solid {
-  translation -550 -850 0.10
+  translation -544.26 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -19822,7 +19642,7 @@ Solid {
 }
 
 Solid {
-  translation -550 -250 0.10
+  translation -550.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -19878,7 +19698,7 @@ Solid {
 }
 
 Solid {
-  translation -550 -10 0.10
+  translation -551.53 -13.70 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -20046,7 +19866,7 @@ Solid {
 }
 
 Solid {
-  translation -550 710 0.10
+  translation -549.04 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -20228,7 +20048,7 @@ Solid {
 }
 
 Solid {
-  translation -490 -850 0.10
+  translation -484.26 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -20368,7 +20188,7 @@ Solid {
 }
 
 Solid {
-  translation -490 -250 0.10
+  translation -490.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -20409,50 +20229,14 @@ Solid {
   name "TREE_CITY_0480"
 }
 
-Solid {
-  translation -490 -70 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
-    Transform {
-      translation 0 0 3.9599999999999995
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.0 } }
-      ]
-    }
-  ]
-  name "TREE_CITY_0481"
-}
+
+
+
+
+
 
 Solid {
-  translation -490 -10 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
-    Transform {
-      translation 0 0 3.9599999999999995
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.0 } }
-      ]
-    }
-  ]
-  name "TREE_CITY_0482"
-}
-
-Solid {
-  translation -490 50 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
-    Transform {
-      translation 0 0 3.9599999999999995
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.0 } }
-      ]
-    }
-  ]
-  name "TREE_CITY_0483"
-}
-
-Solid {
-  translation -490 110 0.10
+  translation -488.23 111.77 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -20592,7 +20376,7 @@ Solid {
 }
 
 Solid {
-  translation -490 710 0.10
+  translation -489.04 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -20760,7 +20544,7 @@ Solid {
 }
 
 Solid {
-  translation -430 -850 0.10
+  translation -424.26 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -20857,22 +20641,10 @@ Solid {
   name "TREE_CITY_0512"
 }
 
-Solid {
-  translation -430 -310 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
-    Transform {
-      translation 0 0 3.9599999999999995
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.0 } }
-      ]
-    }
-  ]
-  name "TREE_CITY_0513"
-}
+
 
 Solid {
-  translation -430 -250 0.10
+  translation -430.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -20913,36 +20685,12 @@ Solid {
   name "TREE_CITY_0516"
 }
 
-Solid {
-  translation -430 -70 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
-    Transform {
-      translation 0 0 3.9599999999999995
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.0 } }
-      ]
-    }
-  ]
-  name "TREE_CITY_0517"
-}
+
+
+
 
 Solid {
-  translation -430 50 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
-    Transform {
-      translation 0 0 3.9599999999999995
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.0 } }
-      ]
-    }
-  ]
-  name "TREE_CITY_0518"
-}
-
-Solid {
-  translation -430 110 0.10
+  translation -428.23 111.77 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -20984,7 +20732,7 @@ Solid {
 }
 
 Solid {
-  translation -430 350 0.10
+  translation -420.05 374.02 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -21054,7 +20802,7 @@ Solid {
 }
 
 Solid {
-  translation -430 710 0.10
+  translation -429.04 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -21208,7 +20956,7 @@ Solid {
 }
 
 Solid {
-  translation -370 -850 0.10
+  translation -364.26 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -21292,7 +21040,7 @@ Solid {
 }
 
 Solid {
-  translation -370 -490 0.10
+  translation -373.70 -488.47 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -21348,7 +21096,7 @@ Solid {
 }
 
 Solid {
-  translation -370 -250 0.10
+  translation -370.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -21389,50 +21137,14 @@ Solid {
   name "TREE_CITY_0550"
 }
 
-Solid {
-  translation -370 -70 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
-    Transform {
-      translation 0 0 3.9599999999999995
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.0 } }
-      ]
-    }
-  ]
-  name "TREE_CITY_0551"
-}
+
+
+
+
+
 
 Solid {
-  translation -370 -10 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
-    Transform {
-      translation 0 0 3.9599999999999995
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.0 } }
-      ]
-    }
-  ]
-  name "TREE_CITY_0552"
-}
-
-Solid {
-  translation -370 50 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
-    Transform {
-      translation 0 0 3.9599999999999995
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.0 } }
-      ]
-    }
-  ]
-  name "TREE_CITY_0553"
-}
-
-Solid {
-  translation -370 110 0.10
+  translation -368.23 111.77 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -21488,7 +21200,7 @@ Solid {
 }
 
 Solid {
-  translation -370 350 0.10
+  translation -367.50 350.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -21572,7 +21284,7 @@ Solid {
 }
 
 Solid {
-  translation -370 710 0.10
+  translation -369.04 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -21754,7 +21466,7 @@ Solid {
 }
 
 Solid {
-  translation -310 -850 0.10
+  translation -304.26 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -21894,7 +21606,7 @@ Solid {
 }
 
 Solid {
-  translation -310 -250 0.10
+  translation -310.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -21936,7 +21648,7 @@ Solid {
 }
 
 Solid {
-  translation -310 -70 0.10
+  translation -307.50 -70.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -21950,7 +21662,7 @@ Solid {
 }
 
 Solid {
-  translation -310 -10 0.10
+  translation -308.47 -13.70 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -21964,7 +21676,7 @@ Solid {
 }
 
 Solid {
-  translation -310 50 0.10
+  translation -307.50 50.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -21978,7 +21690,7 @@ Solid {
 }
 
 Solid {
-  translation -310 110 0.10
+  translation -307.50 110.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22118,7 +21830,7 @@ Solid {
 }
 
 Solid {
-  translation -310 710 0.10
+  translation -309.04 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22300,7 +22012,7 @@ Solid {
 }
 
 Solid {
-  translation -250 -850 0.10
+  translation -244.26 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22440,7 +22152,7 @@ Solid {
 }
 
 Solid {
-  translation -250 -250 0.10
+  translation -235.00 -250.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22454,7 +22166,7 @@ Solid {
 }
 
 Solid {
-  translation -250 -190 0.10
+  translation -238.00 -190.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22468,7 +22180,7 @@ Solid {
 }
 
 Solid {
-  translation -250 -130 0.10
+  translation -238.00 -130.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22482,7 +22194,7 @@ Solid {
 }
 
 Solid {
-  translation -250 -70 0.10
+  translation -238.00 -70.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22496,7 +22208,7 @@ Solid {
 }
 
 Solid {
-  translation -250 -10 0.10
+  translation -238.00 -10.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22510,7 +22222,7 @@ Solid {
 }
 
 Solid {
-  translation -250 50 0.10
+  translation -238.00 50.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22524,7 +22236,7 @@ Solid {
 }
 
 Solid {
-  translation -250 110 0.10
+  translation -238.00 110.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22538,7 +22250,7 @@ Solid {
 }
 
 Solid {
-  translation -250 170 0.10
+  translation -238.00 170.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22552,7 +22264,7 @@ Solid {
 }
 
 Solid {
-  translation -250 230 0.10
+  translation -238.00 230.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22566,7 +22278,7 @@ Solid {
 }
 
 Solid {
-  translation -250 290 0.10
+  translation -238.00 290.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22580,7 +22292,7 @@ Solid {
 }
 
 Solid {
-  translation -250 350 0.10
+  translation -238.00 350.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22594,7 +22306,7 @@ Solid {
 }
 
 Solid {
-  translation -250 410 0.10
+  translation -238.00 410.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22608,7 +22320,7 @@ Solid {
 }
 
 Solid {
-  translation -250 470 0.10
+  translation -262.00 470.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22622,7 +22334,7 @@ Solid {
 }
 
 Solid {
-  translation -250 530 0.10
+  translation -238.00 530.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22636,7 +22348,7 @@ Solid {
 }
 
 Solid {
-  translation -250 590 0.10
+  translation -238.00 590.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22650,7 +22362,7 @@ Solid {
 }
 
 Solid {
-  translation -250 650 0.10
+  translation -238.00 650.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22664,7 +22376,7 @@ Solid {
 }
 
 Solid {
-  translation -250 710 0.10
+  translation -249.04 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -22846,7 +22558,7 @@ Solid {
 }
 
 Solid {
-  translation -190 -850 0.10
+  translation -184.26 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -23154,7 +22866,7 @@ Solid {
 }
 
 Solid {
-  translation -190 470 0.10
+  translation -185.41 481.09 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -23210,7 +22922,7 @@ Solid {
 }
 
 Solid {
-  translation -190 710 0.10
+  translation -189.04 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -23392,7 +23104,7 @@ Solid {
 }
 
 Solid {
-  translation -130 -850 0.10
+  translation -124.26 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -23658,7 +23370,7 @@ Solid {
 }
 
 Solid {
-  translation -130 290 0.10
+  translation -130.00 280.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -23700,7 +23412,7 @@ Solid {
 }
 
 Solid {
-  translation -130 470 0.10
+  translation -125.41 481.09 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -23756,7 +23468,7 @@ Solid {
 }
 
 Solid {
-  translation -130 710 0.10
+  translation -129.04 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -23938,7 +23650,7 @@ Solid {
 }
 
 Solid {
-  translation -70 -850 0.10
+  translation -64.26 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24120,7 +23832,7 @@ Solid {
 }
 
 Solid {
-  translation -70 110 0.10
+  translation -68.23 111.77 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24204,7 +23916,7 @@ Solid {
 }
 
 Solid {
-  translation -70 470 0.10
+  translation -65.41 481.09 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24260,7 +23972,7 @@ Solid {
 }
 
 Solid {
-  translation -70 710 0.10
+  translation -69.04 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24399,22 +24111,10 @@ Solid {
   name "TREE_CITY_0765"
 }
 
-Solid {
-  translation -10 -970 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
-    Transform {
-      translation 0 0 3.9599999999999995
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.0 } }
-      ]
-    }
-  ]
-  name "TREE_CITY_0766"
-}
+
 
 Solid {
-  translation -10 -910 0.10
+  translation -19.95 -885.98 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24428,7 +24128,7 @@ Solid {
 }
 
 Solid {
-  translation -10 -850 0.10
+  translation -15.74 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24442,7 +24142,7 @@ Solid {
 }
 
 Solid {
-  translation -10 -790 0.10
+  translation -13.70 -788.47 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24456,7 +24156,7 @@ Solid {
 }
 
 Solid {
-  translation -10 -730 0.10
+  translation -13.70 -728.47 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24470,7 +24170,7 @@ Solid {
 }
 
 Solid {
-  translation -10 -670 0.10
+  translation -13.70 -668.47 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24484,7 +24184,7 @@ Solid {
 }
 
 Solid {
-  translation -10 -550 0.10
+  translation -13.70 -548.47 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24498,7 +24198,7 @@ Solid {
 }
 
 Solid {
-  translation -10 -490 0.10
+  translation -13.70 -488.47 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24582,7 +24282,7 @@ Solid {
 }
 
 Solid {
-  translation -10 110 0.10
+  translation -8.23 111.77 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24610,7 +24310,7 @@ Solid {
 }
 
 Solid {
-  translation -10 290 0.10
+  translation -13.70 291.53 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24624,7 +24324,7 @@ Solid {
 }
 
 Solid {
-  translation -10 350 0.10
+  translation -13.70 351.53 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24638,7 +24338,7 @@ Solid {
 }
 
 Solid {
-  translation -10 470 0.10
+  translation -14.59 481.09 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24652,7 +24352,7 @@ Solid {
 }
 
 Solid {
-  translation -10 530 0.10
+  translation -13.83 539.24 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24666,7 +24366,7 @@ Solid {
 }
 
 Solid {
-  translation -10 590 0.10
+  translation -13.70 591.53 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24680,7 +24380,7 @@ Solid {
 }
 
 Solid {
-  translation -10 650 0.10
+  translation -13.70 651.53 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24694,7 +24394,7 @@ Solid {
 }
 
 Solid {
-  translation -10 710 0.10
+  translation -14.24 714.24 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24708,7 +24408,7 @@ Solid {
 }
 
 Solid {
-  translation -10 770 0.10
+  translation -13.70 771.53 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24722,7 +24422,7 @@ Solid {
 }
 
 Solid {
-  translation -10 890 0.10
+  translation -11.77 891.77 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24736,7 +24436,7 @@ Solid {
 }
 
 Solid {
-  translation -10 950 0.10
+  translation -34.02 959.95 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24820,7 +24520,7 @@ Solid {
 }
 
 Solid {
-  translation 50 -970 0.10
+  translation 65.00 -970.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24834,7 +24534,7 @@ Solid {
 }
 
 Solid {
-  translation 50 -910 0.10
+  translation 52.50 -910.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -24848,7 +24548,7 @@ Solid {
 }
 
 Solid {
-  translation 50 -850 0.10
+  translation 55.74 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -25030,7 +24730,7 @@ Solid {
 }
 
 Solid {
-  translation 50 110 0.10
+  translation 51.77 111.77 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -25100,7 +24800,7 @@ Solid {
 }
 
 Solid {
-  translation 50 410 0.10
+  translation 56.00 410.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -25114,7 +24814,7 @@ Solid {
 }
 
 Solid {
-  translation 50 470 0.10
+  translation 54.59 481.09 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -25170,7 +24870,7 @@ Solid {
 }
 
 Solid {
-  translation 50 710 0.10
+  translation 50.96 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -25352,7 +25052,7 @@ Solid {
 }
 
 Solid {
-  translation 110 -850 0.10
+  translation 115.74 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -25534,7 +25234,7 @@ Solid {
 }
 
 Solid {
-  translation 110 -70 0.10
+  translation 112.50 -70.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -25548,7 +25248,7 @@ Solid {
 }
 
 Solid {
-  translation 110 -10 0.10
+  translation 112.50 -10.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -25562,7 +25262,7 @@ Solid {
 }
 
 Solid {
-  translation 110 50 0.10
+  translation 112.50 50.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -25576,7 +25276,7 @@ Solid {
 }
 
 Solid {
-  translation 110 110 0.10
+  translation 112.50 110.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -25660,7 +25360,7 @@ Solid {
 }
 
 Solid {
-  translation 110 470 0.10
+  translation 114.59 481.09 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -25716,7 +25416,7 @@ Solid {
 }
 
 Solid {
-  translation 110 710 0.10
+  translation 110.96 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -25898,7 +25598,7 @@ Solid {
 }
 
 Solid {
-  translation 170 -850 0.10
+  translation 175.74 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -26038,7 +25738,7 @@ Solid {
 }
 
 Solid {
-  translation 170 -250 0.10
+  translation 170.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -26206,7 +25906,7 @@ Solid {
 }
 
 Solid {
-  translation 170 470 0.10
+  translation 174.59 481.09 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -26262,7 +25962,7 @@ Solid {
 }
 
 Solid {
-  translation 170 710 0.10
+  translation 170.96 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -26430,7 +26130,7 @@ Solid {
 }
 
 Solid {
-  translation 230 -850 0.10
+  translation 235.74 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -26542,7 +26242,7 @@ Solid {
 }
 
 Solid {
-  translation 230 -250 0.10
+  translation 230.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -26584,7 +26284,7 @@ Solid {
 }
 
 Solid {
-  translation 230 -70 0.10
+  translation 233.06 -77.39 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -26667,19 +26367,7 @@ Solid {
   name "TREE_CITY_0927"
 }
 
-Solid {
-  translation 230 470 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
-    Transform {
-      translation 0 0 3.9599999999999995
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.0 } }
-      ]
-    }
-  ]
-  name "TREE_CITY_0928"
-}
+
 
 Solid {
   translation 230 530 0.10
@@ -26724,7 +26412,7 @@ Solid {
 }
 
 Solid {
-  translation 230 710 0.10
+  translation 230.96 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -26878,7 +26566,7 @@ Solid {
 }
 
 Solid {
-  translation 290 -850 0.10
+  translation 295.74 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27018,7 +26706,7 @@ Solid {
 }
 
 Solid {
-  translation 290 -250 0.10
+  translation 290.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27074,7 +26762,7 @@ Solid {
 }
 
 Solid {
-  translation 290 -10 0.10
+  translation 288.47 -13.70 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27116,7 +26804,7 @@ Solid {
 }
 
 Solid {
-  translation 290 170 0.10
+  translation 288.23 171.77 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27158,7 +26846,7 @@ Solid {
 }
 
 Solid {
-  translation 290 350 0.10
+  translation 288.23 348.23 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27171,33 +26859,9 @@ Solid {
   name "TREE_CITY_0963"
 }
 
-Solid {
-  translation 290 410 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
-    Transform {
-      translation 0 0 3.9599999999999995
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.0 } }
-      ]
-    }
-  ]
-  name "TREE_CITY_0964"
-}
 
-Solid {
-  translation 290 470 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
-    Transform {
-      translation 0 0 3.9599999999999995
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.0 } }
-      ]
-    }
-  ]
-  name "TREE_CITY_0965"
-}
+
+
 
 Solid {
   translation 290 530 0.10
@@ -27242,7 +26906,7 @@ Solid {
 }
 
 Solid {
-  translation 290 710 0.10
+  translation 290.96 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27424,7 +27088,7 @@ Solid {
 }
 
 Solid {
-  translation 350 -850 0.10
+  translation 355.74 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27550,7 +27214,7 @@ Solid {
 }
 
 Solid {
-  translation 350 -310 0.10
+  translation 350.00 -284.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27564,7 +27228,7 @@ Solid {
 }
 
 Solid {
-  translation 350 -250 0.10
+  translation 350.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27592,7 +27256,7 @@ Solid {
 }
 
 Solid {
-  translation 350 -130 0.10
+  translation 350.00 -136.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27606,7 +27270,7 @@ Solid {
 }
 
 Solid {
-  translation 350 -70 0.10
+  translation 368.00 -70.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27620,7 +27284,7 @@ Solid {
 }
 
 Solid {
-  translation 350 -10 0.10
+  translation 348.47 -13.70 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27661,22 +27325,10 @@ Solid {
   name "TREE_CITY_0998"
 }
 
-Solid {
-  translation 350 170 0.10
-  children [
-    Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
-    Transform {
-      translation 0 0 3.9599999999999995
-      children [
-        Shape { appearance PBRAppearance { baseColor 0.14 0.48 0.16 roughness 0.8 } geometry Sphere { radius 3.0 } }
-      ]
-    }
-  ]
-  name "TREE_CITY_0999"
-}
+
 
 Solid {
-  translation 350 230 0.10
+  translation 350.00 208.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27690,7 +27342,7 @@ Solid {
 }
 
 Solid {
-  translation 350 290 0.10
+  translation 351.77 291.77 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27704,7 +27356,7 @@ Solid {
 }
 
 Solid {
-  translation 350 350 0.10
+  translation 348.23 348.23 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27788,7 +27440,7 @@ Solid {
 }
 
 Solid {
-  translation 350 710 0.10
+  translation 350.96 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -27956,7 +27608,7 @@ Solid {
 }
 
 Solid {
-  translation 410 -850 0.10
+  translation 415.74 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -28068,7 +27720,7 @@ Solid {
 }
 
 Solid {
-  translation 410 -250 0.10
+  translation 410.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -28152,7 +27804,7 @@ Solid {
 }
 
 Solid {
-  translation 410 170 0.10
+  translation 412.50 170.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -28180,7 +27832,7 @@ Solid {
 }
 
 Solid {
-  translation 410 350 0.10
+  translation 408.23 348.23 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -28250,7 +27902,7 @@ Solid {
 }
 
 Solid {
-  translation 410 710 0.10
+  translation 410.96 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -28404,7 +28056,7 @@ Solid {
 }
 
 Solid {
-  translation 470 -850 0.10
+  translation 475.74 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -28544,7 +28196,7 @@ Solid {
 }
 
 Solid {
-  translation 470 -250 0.10
+  translation 470.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -28600,7 +28252,7 @@ Solid {
 }
 
 Solid {
-  translation 470 -10 0.10
+  translation 468.47 -13.70 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -28768,7 +28420,7 @@ Solid {
 }
 
 Solid {
-  translation 470 710 0.10
+  translation 470.96 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -28950,7 +28602,7 @@ Solid {
 }
 
 Solid {
-  translation 530 -850 0.10
+  translation 535.74 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -29090,7 +28742,7 @@ Solid {
 }
 
 Solid {
-  translation 530 -250 0.10
+  translation 530.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -29146,7 +28798,7 @@ Solid {
 }
 
 Solid {
-  translation 530 -10 0.10
+  translation 528.47 -13.70 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -29314,7 +28966,7 @@ Solid {
 }
 
 Solid {
-  translation 530 710 0.10
+  translation 530.96 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -29496,7 +29148,7 @@ Solid {
 }
 
 Solid {
-  translation 590 -850 0.10
+  translation 595.74 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -29636,7 +29288,7 @@ Solid {
 }
 
 Solid {
-  translation 590 -250 0.10
+  translation 590.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -29692,7 +29344,7 @@ Solid {
 }
 
 Solid {
-  translation 590 -10 0.10
+  translation 588.47 -13.70 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -29860,7 +29512,7 @@ Solid {
 }
 
 Solid {
-  translation 590 710 0.10
+  translation 590.96 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -29972,7 +29624,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -1150 0.10
+  translation 652.50 -1150.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -29986,7 +29638,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -1090 0.10
+  translation 652.50 -1090.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30000,7 +29652,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -1030 0.10
+  translation 652.50 -1030.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30014,7 +29666,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -970 0.10
+  translation 652.50 -970.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30028,7 +29680,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -910 0.10
+  translation 652.50 -910.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30042,7 +29694,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -850 0.10
+  translation 655.74 -836.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30056,7 +29708,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -790 0.10
+  translation 652.50 -790.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30070,7 +29722,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -730 0.10
+  translation 652.50 -730.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30084,7 +29736,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -670 0.10
+  translation 652.50 -670.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30098,7 +29750,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -610 0.10
+  translation 652.50 -610.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30112,7 +29764,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -550 0.10
+  translation 652.50 -550.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30126,7 +29778,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -490 0.10
+  translation 652.50 -490.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30140,7 +29792,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -430 0.10
+  translation 652.50 -430.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30154,7 +29806,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -370 0.10
+  translation 652.50 -370.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30168,7 +29820,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -310 0.10
+  translation 652.50 -310.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30182,7 +29834,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -250 0.10
+  translation 655.74 -236.14 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30196,7 +29848,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -190 0.10
+  translation 652.50 -190.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30210,7 +29862,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -130 0.10
+  translation 652.50 -130.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30224,7 +29876,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -70 0.10
+  translation 652.50 -70.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30238,7 +29890,7 @@ Solid {
 }
 
 Solid {
-  translation 650 -10 0.10
+  translation 652.30 -15.54 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30252,7 +29904,7 @@ Solid {
 }
 
 Solid {
-  translation 650 50 0.10
+  translation 652.50 50.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30266,7 +29918,7 @@ Solid {
 }
 
 Solid {
-  translation 650 110 0.10
+  translation 652.50 110.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30280,7 +29932,7 @@ Solid {
 }
 
 Solid {
-  translation 650 170 0.10
+  translation 652.50 170.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30294,7 +29946,7 @@ Solid {
 }
 
 Solid {
-  translation 650 230 0.10
+  translation 652.50 230.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30308,7 +29960,7 @@ Solid {
 }
 
 Solid {
-  translation 650 290 0.10
+  translation 652.50 290.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30322,7 +29974,7 @@ Solid {
 }
 
 Solid {
-  translation 650 350 0.10
+  translation 652.50 350.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30336,7 +29988,7 @@ Solid {
 }
 
 Solid {
-  translation 650 410 0.10
+  translation 652.50 410.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30350,7 +30002,7 @@ Solid {
 }
 
 Solid {
-  translation 650 470 0.10
+  translation 652.50 470.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30364,7 +30016,7 @@ Solid {
 }
 
 Solid {
-  translation 650 530 0.10
+  translation 652.50 530.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30378,7 +30030,7 @@ Solid {
 }
 
 Solid {
-  translation 650 590 0.10
+  translation 652.50 590.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30392,7 +30044,7 @@ Solid {
 }
 
 Solid {
-  translation 650 650 0.10
+  translation 652.50 650.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30406,7 +30058,7 @@ Solid {
 }
 
 Solid {
-  translation 650 710 0.10
+  translation 652.83 712.83 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30420,7 +30072,7 @@ Solid {
 }
 
 Solid {
-  translation 650 770 0.10
+  translation 652.50 770.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30434,7 +30086,7 @@ Solid {
 }
 
 Solid {
-  translation 650 830 0.10
+  translation 652.50 830.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30448,7 +30100,7 @@ Solid {
 }
 
 Solid {
-  translation 650 890 0.10
+  translation 652.50 890.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30462,7 +30114,7 @@ Solid {
 }
 
 Solid {
-  translation 650 950 0.10
+  translation 652.50 950.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30476,7 +30128,7 @@ Solid {
 }
 
 Solid {
-  translation 650 1010 0.10
+  translation 652.50 1010.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30490,7 +30142,7 @@ Solid {
 }
 
 Solid {
-  translation 650 1070 0.10
+  translation 652.50 1070.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30504,7 +30156,7 @@ Solid {
 }
 
 Solid {
-  translation 650 1130 0.10
+  translation 652.50 1130.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30602,7 +30254,7 @@ Solid {
 }
 
 Solid {
-  translation 710 -790 0.10
+  translation 712.50 -790.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30616,7 +30268,7 @@ Solid {
 }
 
 Solid {
-  translation 710 -730 0.10
+  translation 712.50 -730.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30630,7 +30282,7 @@ Solid {
 }
 
 Solid {
-  translation 710 -670 0.10
+  translation 712.50 -670.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30728,7 +30380,7 @@ Solid {
 }
 
 Solid {
-  translation 710 -250 0.10
+  translation 710.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30784,7 +30436,7 @@ Solid {
 }
 
 Solid {
-  translation 710 -10 0.10
+  translation 708.47 -13.70 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30952,7 +30604,7 @@ Solid {
 }
 
 Solid {
-  translation 710 710 0.10
+  translation 710.00 714.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30966,7 +30618,7 @@ Solid {
 }
 
 Solid {
-  translation 710 770 0.10
+  translation 712.50 770.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -30980,7 +30632,7 @@ Solid {
 }
 
 Solid {
-  translation 710 830 0.10
+  translation 712.50 830.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -31274,7 +30926,7 @@ Solid {
 }
 
 Solid {
-  translation 770 -250 0.10
+  translation 770.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -31330,7 +30982,7 @@ Solid {
 }
 
 Solid {
-  translation 770 -10 0.10
+  translation 770.00 -14.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -31498,7 +31150,7 @@ Solid {
 }
 
 Solid {
-  translation 770 710 0.10
+  translation 770.96 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -31778,7 +31430,7 @@ Solid {
 }
 
 Solid {
-  translation 830 -250 0.10
+  translation 830.00 -238.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -31960,7 +31612,7 @@ Solid {
 }
 
 Solid {
-  translation 830 710 0.10
+  translation 830.96 712.31 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -32310,7 +31962,7 @@ Solid {
 }
 
 Solid {
-  translation 890 -10 0.10
+  translation 888.23 -11.77 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -32786,7 +32438,7 @@ Solid {
 }
 
 Solid {
-  translation 950 -310 0.10
+  translation 946.17 -319.24 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -32856,7 +32508,7 @@ Solid {
 }
 
 Solid {
-  translation 950 -10 0.10
+  translation 928.79 -31.21 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -32870,7 +32522,7 @@ Solid {
 }
 
 Solid {
-  translation 950 50 0.10
+  translation 972.00 50.00 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -32884,7 +32536,7 @@ Solid {
 }
 
 Solid {
-  translation 950 110 0.10
+  translation 946.17 100.76 0.10
   children [
     Shape { appearance PBRAppearance { baseColor 0.35 0.22 0.12 roughness 0.9 } geometry Cylinder { height 4.32 radius 0.42 } }
     Transform {
@@ -34668,7 +34320,7 @@ Solid {
 
 # CAR_001 (Bright Cyan Blue + White Roof)
 DEF CAR_001 Robot {
-  translation -250.00 253.50 0.10
+  translation -235.00 253.50 0.10
   rotation 0 0 1 0.0000
   children [
     Transform {
@@ -34738,7 +34390,7 @@ DEF CAR_001 Robot {
 
 # CAR_002 (Crimson Red + White Roof)
 DEF CAR_002 Robot {
-  translation -246.50 250.00 0.10
+  translation -246.50 235.00 0.10
   rotation 0 0 1 -1.5708
   children [
     Transform {
@@ -34808,7 +34460,7 @@ DEF CAR_002 Robot {
 
 # CAR_003 (Emerald Green + White Roof)
 DEF CAR_003 Robot {
-  translation -248.43 -246.87 0.10
+  translation -235.01 -253.58 0.10
   rotation 0 0 1 -0.4636
   children [
     Transform {
@@ -34873,7 +34525,7 @@ DEF CAR_003 Robot {
 
 # CAR_004 (Pearl White + Gloss Black Roof)
 DEF CAR_004 Robot {
-  translation -252.47 247.53 0.10
+  translation -263.08 258.14 0.10
   rotation 0 0 1 2.3562
   children [
     Transform {
@@ -34938,7 +34590,7 @@ DEF CAR_004 Robot {
 
 # CAR_005 (Canary Yellow + Black Roof)
 DEF CAR_005 Robot {
-  translation 247.53 252.47 0.10
+  translation 258.14 263.08 0.10
   rotation 0 0 1 0.7854
   children [
     Transform {
@@ -35003,7 +34655,7 @@ DEF CAR_005 Robot {
 
 # CAR_006 (Vibrant Orange + White Roof)
 DEF CAR_006 Robot {
-  translation 219.72 -46.51 0.10
+  translation 234.67 -45.32 0.10
   rotation 0 0 1 0.0792
   children [
     Transform {
@@ -35068,7 +34720,7 @@ DEF CAR_006 Robot {
 
 # CAR_007 (Titanium Silver + Black Roof)
 DEF CAR_007 Robot {
-  translation -251.35 -253.23 0.10
+  translation -265.20 -247.46 0.10
   rotation 0 0 1 2.7468
   children [
     Transform {
@@ -35133,7 +34785,7 @@ DEF CAR_007 Robot {
 
 # CAR_008 (Royal Purple + White Roof)
 DEF CAR_008 Robot {
-  translation 153.28 -451.23 0.10
+  translation 148.01 -465.27 0.10
   rotation 0 0 1 -1.9296
   children [
     Transform {
@@ -35198,7 +34850,7 @@ DEF CAR_008 Robot {
 
 # CAR_009 (Bright Gold + White Roof)
 DEF CAR_009 Robot {
-  translation -150.00 253.50 0.10
+  translation -195.00 253.50 0.10
   rotation 0 0 1 0.0000
   children [
     Transform {
@@ -35263,7 +34915,7 @@ DEF CAR_009 Robot {
 
 # CAR_010 (Coral Red + White Roof)
 DEF CAR_010 Robot {
-  translation -251.37 -246.78 0.10
+  translation -237.57 -240.91 0.10
   rotation 0 0 1 0.4023
   children [
     Transform {
@@ -35328,7 +34980,7 @@ DEF CAR_010 Robot {
 
 # BIKE_001 (Racing Red Motorcycle + White Helmet)
 DEF BIKE_001 Robot {
-  translation 50.00 253.50 0.10
+  translation -155.00 253.50 0.10
   rotation 0 0 1 0.0000
   children [
     Transform {
@@ -35389,7 +35041,7 @@ DEF BIKE_001 Robot {
 
 # BIKE_002 (Neon Yellow Motorcycle + White Helmet)
 DEF BIKE_002 Robot {
-  translation -246.50 50.00 0.10
+  translation -246.50 195.00 0.10
   rotation 0 0 1 -1.5708
   children [
     Transform {
@@ -35438,7 +35090,7 @@ DEF BIKE_002 Robot {
 
 # BIKE_003 (Electric Cyan Motorcycle + White Helmet)
 DEF BIKE_003 Robot {
-  translation -88.43 -326.87 0.10
+  translation -199.24 -271.47 0.10
   rotation 0 0 1 -0.4636
   children [
     Transform {
@@ -35487,7 +35139,7 @@ DEF BIKE_003 Robot {
 
 # BIKE_004 (Pure Pearl White Motorcycle + White Helmet)
 DEF BIKE_004 Robot {
-  translation 247.48 189.65 0.10
+  translation 251.99 234.72 0.10
   rotation 0 0 1 -1.6705
   children [
     Transform {
@@ -35536,7 +35188,7 @@ DEF BIKE_004 Robot {
 
 # BIKE_005 (Lime Green Motorcycle + White Helmet)
 DEF BIKE_005 Robot {
-  translation -50.00 253.50 0.10
+  translation -115.00 253.50 0.10
   rotation 0 0 1 0.0000
   children [
     Transform {
@@ -35586,7 +35238,7 @@ DEF BIKE_005 Robot {
 
 # AMBULANCE_001 (High-Fidelity Emergency Ambulance)
 DEF AMBULANCE_001 Robot {
-  translation -248.43 -246.87 0.10
+  translation -163.46 -289.36 0.10
   rotation 0 0 1 -0.4636
   children [
     # Main Lower Chassis
@@ -35775,9 +35427,9 @@ DEF AMBULANCE_001 Robot {
 
 
 # FIRE_ENGINE_001 (Recognizable Heavy Rescue Fire Engine)
-DEF FIRE_ENGINE_001 Solid {
-  translation 150.0 -350.0 0.10
-  rotation 0 0 1 1.5708
+DEF FIRE_ENGINE_001 Robot {
+  translation 170.95 -350.60 0.10
+  rotation 0 0 1 -1.7453
   children [
     # Main Heavy Chassis Base
     Transform {
@@ -35935,4 +35587,6 @@ DEF FIRE_ENGINE_001 Solid {
     }
   ]
   name "FIRE_ENGINE_001"
+  controller "fire_engine_controller"
+  supervisor TRUE
 }

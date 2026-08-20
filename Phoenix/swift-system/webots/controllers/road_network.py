@@ -344,9 +344,28 @@ ROAD_NETWORK["LANE_J15_J2_SW"] = _build_lht_lane("LANE_J15_J2_SW", "SW", (450.0,
 # Backward Compatibility Lane Aliases for Existing Suite
 ROAD_NETWORK["LANE_SCHOOL_01_EB"] = ROAD_NETWORK["LANE_J1_J2_EB"]
 ROAD_NETWORK["LANE_SCHOOL_01_WB"] = ROAD_NETWORK["LANE_J2_J1_WB"]
-ROAD_NETWORK["LANE_NORTH_EAST"] = ROAD_NETWORK["LANE_J1_J2_EB"]
+ROAD_NETWORK["LANE_WEST_NORTH"] = Lane(
+    lane_id="LANE_WEST_NORTH",
+    direction="NORTH",
+    start_point=(-46.5, -50.0),
+    end_point=(-46.5, 46.5),
+    waypoints=[(-46.5, 20.0), (-46.5, 43.0), (-46.5, 46.5)],
+    next_junction="J1",
+    controlled_signal=("J1", "SOUTH"),
+    stop_line=(-46.5, 43.0)
+)
+ROAD_NETWORK["LANE_NORTH_EAST"] = Lane(
+    lane_id="LANE_NORTH_EAST",
+    direction="EAST",
+    start_point=(-46.5, 46.5),
+    end_point=(50.0, 46.5),
+    waypoints=[(-46.5, 46.5), (-43.0, 46.5), (50.0, 46.5)],
+    next_junction="J2",
+    controlled_signal=("J2", "WEST"),
+    stop_line=(43.0, 46.5)
+)
 ROAD_NETWORK["LANE_EAST_SOUTH"] = ROAD_NETWORK["LANE_J2_J3_SB"]
-ROAD_NETWORK["LANE_WEST_NORTH"] = ROAD_NETWORK["LANE_J4_J1_NB"]
+
 
 
 # ==========================================
@@ -375,6 +394,38 @@ VEHICLE_ROUTES: Dict[str, List[str]] = {
     # AMBULANCE
     "AMBULANCE_001": ["LANE_J4_J5_SE", "LANE_J5_J3_NB", "LANE_J3_J2_NB", "LANE_J2_J1_WB"],
 }
+
+
+def calculate_deterministic_spawns() -> Dict[str, Dict[str, float]]:
+    """
+    Calculates exact LHT lane centerline spawn coordinates for all vehicles,
+    ensuring minimum safe longitudinal separation (zero visual overlap at spawn).
+    """
+    lane_vehicle_map: Dict[str, List[str]] = {}
+    for v_id, route in VEHICLE_ROUTES.items():
+        if route:
+            start_lane_id = route[0]
+            if start_lane_id not in lane_vehicle_map:
+                lane_vehicle_map[start_lane_id] = []
+            lane_vehicle_map[start_lane_id].append(v_id)
+
+    spawns = {}
+    for lane_id, v_list in lane_vehicle_map.items():
+        if lane_id in ROAD_NETWORK:
+            lane = ROAD_NETWORK[lane_id]
+            for idx, v_id in enumerate(v_list):
+                s_dist = 15.0 + idx * 40.0
+                sx = round(lane.start_point[0] + s_dist * lane.unit_vector[0], 2)
+                sy = round(lane.start_point[1] + s_dist * lane.unit_vector[1], 2)
+                spawns[v_id] = {
+                    "x": sx,
+                    "y": sy,
+                    "heading": round(lane.target_heading, 4)
+                }
+    return spawns
+
+
+DETERMINISTIC_VEHICLE_SPAWNS: Dict[str, Dict[str, float]] = calculate_deterministic_spawns()
 
 
 CLOCKWISE_LANE_LOOP: List[str] = [

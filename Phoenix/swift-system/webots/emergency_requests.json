@@ -1,0 +1,12 @@
+{
+  "active": true,
+  "request_type": "EMERGENCY_PRIORITY",
+  "junction_id": "J10",
+  "approach_direction": "SOUTH",
+  "ev_id": "AMB_01",
+  "route": [
+    "J10",
+    "J15"
+  ],
+  "timestamp": 1787201165.4290724
+}

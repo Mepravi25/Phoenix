@@ -125,21 +125,21 @@ def run_test_suite():
 
     # TEST 2 & TEST 8: Safe Distance Following (CAR_002 following CAR_001)
     print("\n--- TEST 2 & TEST 8: Safe Distance Following ---", flush=True)
-    # Position CAR_001 at (246.5, 100.0) heading South (-1.5708)
-    car1.x = 246.5
+    # Position CAR_001 at (-246.5, 100.0) heading South (-1.5708)
+    car1.x = -246.5
     car1.y = 100.0
     car1.heading = -1.5708
-    car1.current_lane_idx = 1
-    car1.current_lane = ROAD_NETWORK["LANE_J2_J3_SB"]
+    car1.current_lane_idx = 0
+    car1.current_lane = ROAD_NETWORK["LANE_J1_J4_SB"]
     car1.current_wp_idx = get_next_forward_waypoint_idx(car1.x, car1.y, car1.heading, car1.current_lane)
     car1.current_speed = 0.0  # Simulate lead car stopped/slow
 
-    # Position CAR_002 behind CAR_001 at (246.5, 106.0) heading South (-1.5708)
-    car2.x = 246.5
+    # Position CAR_002 behind CAR_001 at (-246.5, 106.0) heading South (-1.5708)
+    car2.x = -246.5
     car2.y = 106.0
     car2.heading = -1.5708
-    car2.current_lane_idx = 1
-    car2.current_lane = ROAD_NETWORK["LANE_J2_J3_SB"]
+    car2.current_lane_idx = 0
+    car2.current_lane = ROAD_NETWORK["LANE_J1_J4_SB"]
     car2.current_wp_idx = get_next_forward_waypoint_idx(car2.x, car2.y, car2.heading, car2.current_lane)
     car2.current_speed = 3.0
 

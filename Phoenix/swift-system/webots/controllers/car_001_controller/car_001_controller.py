@@ -74,7 +74,7 @@ def update_heading(current_heading: float, target_heading: float, max_turn_rate:
 class Car001Controller:
     VEHICLE_ID = "CAR_001"
     SPAWN_LANE = "LANE_J1_J2_EB"
-    SPAWN_X = -230.0
+    SPAWN_X = -235.0
     SPAWN_Y = 253.5
     SPAWN_HEADING = 0.0
 

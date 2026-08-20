@@ -73,9 +73,9 @@ def update_heading(current_heading: float, target_heading: float, max_turn_rate:
 
 class Car002Controller:
     VEHICLE_ID = "CAR_002"
-    SPAWN_LANE = "LANE_J2_J3_SB"
-    SPAWN_X = 246.5
-    SPAWN_Y = 230.0
+    SPAWN_LANE = "LANE_J1_J4_SB"
+    SPAWN_X = -246.5
+    SPAWN_Y = 235.0
     SPAWN_HEADING = -1.5708
 
     INITIAL_WP_IDX = 0
@@ -101,8 +101,9 @@ class Car002Controller:
         self.current_speed = 0.0
         self.elapsed_time = 0.0
 
-        self.lane_loop = CLOCKWISE_LANE_LOOP
-        self.current_lane_idx = 1
+        from road_network import VEHICLE_ROUTES
+        self.lane_loop = VEHICLE_ROUTES.get("CAR_002", ["LANE_J1_J4_SB", "LANE_J4_J3_EB", "LANE_J3_J2_NB", "LANE_J2_J1_WB"])
+        self.current_lane_idx = 0
         self.current_lane, self.current_wp_idx, (self.x, self.y) = snap_to_nearest_lane(self.x, self.y, [self.lane_loop[self.current_lane_idx]])
         self.target_heading = self.current_lane.target_heading
         self.heading = self.target_heading
