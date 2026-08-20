@@ -111,7 +111,21 @@ class RouteAgent:
 
         # Sort candidate routes by lowest composite cost score
         candidates.sort(key=lambda c: c["score"])
-        logger.info(f"Generated {len(candidates)} candidate routes. Best: {candidates[0]['path']} (ETA: {candidates[0]['est_total_eta_sec']}s)")
+        
+        best_path_str = candidates[0]['path'] if candidates else "N/A"
+        best_eta_str = candidates[0]['est_total_eta_sec'] if candidates else "N/A"
+        logger.info(f"Generated {len(candidates)} candidate routes. Best: {best_path_str} (ETA: {best_eta_str}s)")
+
+        logger.info(
+            f"\n[ROUTE DEBUG]\n"
+            f"current junction: {start_junction}\n"
+            f"destination: {dest_junction}\n"
+            f"available graph nodes: {list(self.graph.nodes())}\n"
+            f"incidents: {list(incidents.keys())}\n"
+            f"blocked nodes: []\n"
+            f"candidate route count: {len(candidates)}\n"
+            f"candidate routes: {candidates}\n"
+        )
 
         return candidates
 

@@ -2,10 +2,10 @@
   {
     "node": 0,
     "queue_length": 0,
-    "flush_time": 0.0,
-    "light_phase": "EW_GREEN",
+    "flush_time": 3.0,
+    "light_phase": "YELLOW",
     "active_direction": "EW",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 2,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -14,8 +14,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 1,
@@ -23,7 +23,7 @@
     "flush_time": 0.0,
     "light_phase": "NS_GREEN",
     "active_direction": "NS",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -32,8 +32,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 2,
@@ -41,7 +41,7 @@
     "flush_time": 0.0,
     "light_phase": "EW_GREEN",
     "active_direction": "EW",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 13,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -50,8 +50,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 3,
@@ -59,7 +59,7 @@
     "flush_time": 0.0,
     "light_phase": "NS_GREEN",
     "active_direction": "NS",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 13,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -68,8 +68,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 4,
@@ -77,7 +77,7 @@
     "flush_time": 0.0,
     "light_phase": "EW_GREEN",
     "active_direction": "EW",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -86,8 +86,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 5,
@@ -95,7 +95,7 @@
     "flush_time": 0.0,
     "light_phase": "NS_GREEN",
     "active_direction": "NS",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -104,8 +104,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 6,
@@ -113,7 +113,7 @@
     "flush_time": 0.0,
     "light_phase": "EW_GREEN",
     "active_direction": "EW",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -122,8 +122,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 7,
@@ -131,7 +131,7 @@
     "flush_time": 0.0,
     "light_phase": "NS_GREEN",
     "active_direction": "NS",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -140,8 +140,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 8,
@@ -149,7 +149,7 @@
     "flush_time": 0.0,
     "light_phase": "EW_GREEN",
     "active_direction": "EW",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -158,8 +158,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 9,
@@ -167,7 +167,7 @@
     "flush_time": 0.0,
     "light_phase": "NS_GREEN",
     "active_direction": "NS",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -176,8 +176,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 10,
@@ -185,7 +185,7 @@
     "flush_time": 0.0,
     "light_phase": "EW_GREEN",
     "active_direction": "EW",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -194,8 +194,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 11,
@@ -203,7 +203,7 @@
     "flush_time": 0.0,
     "light_phase": "NS_GREEN",
     "active_direction": "NS",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -212,8 +212,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 12,
@@ -221,7 +221,7 @@
     "flush_time": 0.0,
     "light_phase": "EW_GREEN",
     "active_direction": "EW",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -230,8 +230,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 13,
@@ -239,7 +239,7 @@
     "flush_time": 0.0,
     "light_phase": "NS_GREEN",
     "active_direction": "NS",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -248,8 +248,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 14,
@@ -257,7 +257,7 @@
     "flush_time": 0.0,
     "light_phase": "EW_GREEN",
     "active_direction": "EW",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -266,8 +266,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 15,
@@ -275,7 +275,7 @@
     "flush_time": 0.0,
     "light_phase": "NS_GREEN",
     "active_direction": "NS",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -284,8 +284,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 16,
@@ -293,7 +293,7 @@
     "flush_time": 0.0,
     "light_phase": "EW_GREEN",
     "active_direction": "EW",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -302,8 +302,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 17,
@@ -311,7 +311,7 @@
     "flush_time": 0.0,
     "light_phase": "NS_GREEN",
     "active_direction": "NS",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -320,8 +320,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 18,
@@ -329,7 +329,7 @@
     "flush_time": 0.0,
     "light_phase": "EW_GREEN",
     "active_direction": "EW",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -338,8 +338,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 19,
@@ -347,7 +347,7 @@
     "flush_time": 0.0,
     "light_phase": "NS_GREEN",
     "active_direction": "NS",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -356,8 +356,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 20,
@@ -365,7 +365,7 @@
     "flush_time": 0.0,
     "light_phase": "EW_GREEN",
     "active_direction": "EW",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -374,8 +374,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 21,
@@ -383,7 +383,7 @@
     "flush_time": 0.0,
     "light_phase": "NS_GREEN",
     "active_direction": "NS",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -392,8 +392,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 22,
@@ -401,7 +401,7 @@
     "flush_time": 0.0,
     "light_phase": "EW_GREEN",
     "active_direction": "EW",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -410,8 +410,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 23,
@@ -419,7 +419,7 @@
     "flush_time": 0.0,
     "light_phase": "NS_GREEN",
     "active_direction": "NS",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -428,8 +428,8 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   },
   {
     "node": 24,
@@ -437,7 +437,7 @@
     "flush_time": 0.0,
     "light_phase": "EW_GREEN",
     "active_direction": "EW",
-    "phase_remaining_ticks": 6,
+    "phase_remaining_ticks": 4,
     "preemption_active": false,
     "reserved_axis": null,
     "reservation_ev_id": null,
@@ -446,7 +446,7 @@
     "preempted_from_phase": null,
     "preempted_from_direction": null,
     "reservation_control_ready": true,
-    "simulation_tick": 1647,
-    "generated_at": 1787182312.64
+    "simulation_tick": 317,
+    "generated_at": 1787192999.54
   }
 ]

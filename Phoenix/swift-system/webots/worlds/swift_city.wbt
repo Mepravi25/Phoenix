@@ -35582,3 +35582,357 @@ DEF BIKE_005 Robot {
   controller "vehicle_controller"
   supervisor TRUE
 }
+
+
+# AMBULANCE_001 (High-Fidelity Emergency Ambulance)
+DEF AMBULANCE_001 Robot {
+  translation -248.43 -246.87 0.10
+  rotation 0 0 1 -0.4636
+  children [
+    # Main Lower Chassis
+    Transform {
+      translation 0 0 0.60
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.96 0.96 0.96 roughness 0.2 metalness 0.3 }
+          geometry Box { size 5.2 2.1 0.9 }
+        }
+      ]
+    }
+    # Rear Medical Box Body
+    Transform {
+      translation -0.4 0 1.55
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.98 0.98 0.98 roughness 0.15 metalness 0.2 }
+          geometry Box { size 3.2 2.1 1.2 }
+        }
+      ]
+    }
+    # Front Cab Roof
+    Transform {
+      translation 1.4 0 1.40
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.96 0.96 0.96 roughness 0.2 metalness 0.3 }
+          geometry Box { size 1.6 1.9 0.8 }
+        }
+      ]
+    }
+    # Front Windshield
+    Transform {
+      translation 2.1 0 1.45
+      rotation 0 1 0 0.35
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.1 0.15 0.25 roughness 0.1 metalness 0.8 transparency 0.3 }
+          geometry Box { size 0.1 1.7 0.7 }
+        }
+      ]
+    }
+    # Red Emergency Side Stripe (Left)
+    Transform {
+      translation -0.2 1.06 1.10
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.9 0.05 0.05 roughness 0.3 }
+          geometry Box { size 4.8 0.02 0.35 }
+        }
+      ]
+    }
+    # Red Emergency Side Stripe (Right)
+    Transform {
+      translation -0.2 -1.06 1.10
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.9 0.05 0.05 roughness 0.3 }
+          geometry Box { size 4.8 0.02 0.35 }
+        }
+      ]
+    }
+    # Emergency Cross Emblem (Left Vertical)
+    Transform {
+      translation -0.5 1.07 1.55
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.9 0.05 0.05 emissiveColor 0.4 0.02 0.02 }
+          geometry Box { size 0.2 0.02 0.6 }
+        }
+      ]
+    }
+    # Emergency Cross Emblem (Left Horizontal)
+    Transform {
+      translation -0.5 1.07 1.55
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.9 0.05 0.05 emissiveColor 0.4 0.02 0.02 }
+          geometry Box { size 0.6 0.02 0.2 }
+        }
+      ]
+    }
+    # Emergency Cross Emblem (Right Vertical)
+    Transform {
+      translation -0.5 -1.07 1.55
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.9 0.05 0.05 emissiveColor 0.4 0.02 0.02 }
+          geometry Box { size 0.2 0.02 0.6 }
+        }
+      ]
+    }
+    # Emergency Cross Emblem (Right Horizontal)
+    Transform {
+      translation -0.5 -1.07 1.55
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.9 0.05 0.05 emissiveColor 0.4 0.02 0.02 }
+          geometry Box { size 0.6 0.02 0.2 }
+        }
+      ]
+    }
+    # Light Bar Bracket
+    Transform {
+      translation 1.2 0 1.88
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.1 0.1 0.1 roughness 0.5 }
+          geometry Box { size 0.4 1.4 0.08 }
+        }
+      ]
+    }
+    # Emergency Red Light (LED)
+    LED {
+      translation 1.2 0.4 1.94
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 1.0 0.0 0.0 emissiveColor 1.0 0.0 0.0 }
+          geometry Box { size 0.35 0.45 0.12 }
+        }
+      ]
+      name "AMBULANCE_RED_LIGHT"
+      gradColor [
+        1 0 0
+      ]
+    }
+    # Emergency Blue Light (LED)
+    LED {
+      translation 1.2 -0.4 1.94
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.0 0.3 1.0 emissiveColor 0.0 0.3 1.0 }
+          geometry Box { size 0.35 0.45 0.12 }
+        }
+      ]
+      name "AMBULANCE_BLUE_LIGHT"
+      gradColor [
+        0 0.3 1
+      ]
+    }
+    # Headlights (Left & Right)
+    Transform {
+      translation 2.61 0.75 0.60
+      children [ Shape { appearance PBRAppearance { baseColor 1.0 1.0 0.8 emissiveColor 1.0 1.0 0.8 } geometry Box { size 0.08 0.35 0.25 } } ]
+    }
+    Transform {
+      translation 2.61 -0.75 0.60
+      children [ Shape { appearance PBRAppearance { baseColor 1.0 1.0 0.8 emissiveColor 1.0 1.0 0.8 } geometry Box { size 0.08 0.35 0.25 } } ]
+    }
+    # Taillights (Left & Right)
+    Transform {
+      translation -2.01 0.95 0.80
+      children [ Shape { appearance PBRAppearance { baseColor 1.0 0.05 0.05 emissiveColor 1.0 0.05 0.05 } geometry Box { size 0.08 0.25 0.30 } } ]
+    }
+    Transform {
+      translation -2.01 -0.95 0.80
+      children [ Shape { appearance PBRAppearance { baseColor 1.0 0.05 0.05 emissiveColor 1.0 0.05 0.05 } geometry Box { size 0.08 0.25 0.30 } } ]
+    }
+    # 4 Heavy Rubber Tires
+    Transform {
+      translation 1.5 0.95 0.40
+      rotation 1 0 0 1.5708
+      children [ Shape { appearance PBRAppearance { baseColor 0.08 0.08 0.08 roughness 0.9 } geometry Cylinder { height 0.28 radius 0.40 } } ]
+    }
+    Transform {
+      translation 1.5 -0.95 0.40
+      rotation 1 0 0 1.5708
+      children [ Shape { appearance PBRAppearance { baseColor 0.08 0.08 0.08 roughness 0.9 } geometry Cylinder { height 0.28 radius 0.40 } } ]
+    }
+    Transform {
+      translation -1.2 0.95 0.40
+      rotation 1 0 0 1.5708
+      children [ Shape { appearance PBRAppearance { baseColor 0.08 0.08 0.08 roughness 0.9 } geometry Cylinder { height 0.28 radius 0.40 } } ]
+    }
+    Transform {
+      translation -1.2 -0.95 0.40
+      rotation 1 0 0 1.5708
+      children [ Shape { appearance PBRAppearance { baseColor 0.08 0.08 0.08 roughness 0.9 } geometry Cylinder { height 0.28 radius 0.40 } } ]
+    }
+  ]
+  name "AMBULANCE_001"
+  controller "ambulance_001_controller"
+  supervisor TRUE
+}
+
+
+# FIRE_ENGINE_001 (Recognizable Heavy Rescue Fire Engine)
+DEF FIRE_ENGINE_001 Solid {
+  translation 150.0 -350.0 0.10
+  rotation 0 0 1 1.5708
+  children [
+    # Main Heavy Chassis Base
+    Transform {
+      translation 0 0 0.65
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.85 0.05 0.05 roughness 0.25 metalness 0.4 }
+          geometry Box { size 6.8 2.4 1.0 }
+        }
+      ]
+    }
+    # Front Crew Cab
+    Transform {
+      translation 2.1 0 1.65
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.85 0.05 0.05 roughness 0.2 metalness 0.4 }
+          geometry Box { size 2.2 2.38 1.2 }
+        }
+      ]
+    }
+    # Front Cab Windshield
+    Transform {
+      translation 3.2 0 1.75
+      rotation 0 1 0 0.2
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.1 0.1 0.2 roughness 0.1 metalness 0.8 transparency 0.3 }
+          geometry Box { size 0.1 2.1 0.75 }
+        }
+      ]
+    }
+    # Rear Equipment Locker Box
+    Transform {
+      translation -0.8 0 1.65
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.80 0.05 0.05 roughness 0.3 }
+          geometry Box { size 3.6 2.38 1.2 }
+        }
+      ]
+    }
+    # Left Equipment Lockers Panel (Aluminum Finish)
+    Transform {
+      translation -0.8 1.20 1.55
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.75 0.75 0.78 roughness 0.3 metalness 0.85 }
+          geometry Box { size 3.4 0.02 0.95 }
+        }
+      ]
+    }
+    # Right Equipment Lockers Panel (Aluminum Finish)
+    Transform {
+      translation -0.8 -1.20 1.55
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.75 0.75 0.78 roughness 0.3 metalness 0.85 }
+          geometry Box { size 3.4 0.02 0.95 }
+        }
+      ]
+    }
+    # High-Visibility Yellow Reflective Side Stripes (Left & Right)
+    Transform {
+      translation 0.6 1.20 1.05
+      children [ Shape { appearance PBRAppearance { baseColor 0.95 0.85 0.1 emissiveColor 0.3 0.25 0.05 } geometry Box { size 6.2 0.02 0.20 } } ]
+    }
+    Transform {
+      translation 0.6 -1.20 1.05
+      children [ Shape { appearance PBRAppearance { baseColor 0.95 0.85 0.1 emissiveColor 0.3 0.25 0.05 } geometry Box { size 6.2 0.02 0.20 } } ]
+    }
+    # Roof Mounted Rescue Ladder
+    Transform {
+      translation -0.5 0 2.38
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.85 0.85 0.88 roughness 0.2 metalness 0.9 }
+          geometry Box { size 4.8 0.65 0.15 }
+        }
+      ]
+    }
+    # Cab Roof Emergency Light Bar Bracket
+    Transform {
+      translation 2.1 0 2.32
+      children [
+        Shape {
+          appearance PBRAppearance { baseColor 0.1 0.1 0.1 roughness 0.5 }
+          geometry Box { size 0.45 1.8 0.10 }
+        }
+      ]
+    }
+    # Red Emergency Light Unit
+    Transform {
+      translation 2.1 0.65 2.38
+      children [ Shape { appearance PBRAppearance { baseColor 1.0 0.0 0.0 emissiveColor 1.0 0.0 0.0 } geometry Box { size 0.4 0.5 0.12 } } ]
+    }
+    # Blue Emergency Light Unit
+    Transform {
+      translation 2.1 -0.65 2.38
+      children [ Shape { appearance PBRAppearance { baseColor 0.0 0.3 1.0 emissiveColor 0.0 0.3 1.0 } geometry Box { size 0.4 0.5 0.12 } } ]
+    }
+    # Center Amber Beacon Light
+    Transform {
+      translation 2.1 0 2.39
+      children [ Shape { appearance PBRAppearance { baseColor 1.0 0.6 0.0 emissiveColor 1.0 0.6 0.0 } geometry Cylinder { height 0.14 radius 0.12 } } ]
+    }
+    # Dual Front Headlights
+    Transform {
+      translation 3.41 0.85 0.65
+      children [ Shape { appearance PBRAppearance { baseColor 1.0 1.0 0.8 emissiveColor 1.0 1.0 0.8 } geometry Box { size 0.08 0.40 0.30 } } ]
+    }
+    Transform {
+      translation 3.41 -0.85 0.65
+      children [ Shape { appearance PBRAppearance { baseColor 1.0 1.0 0.8 emissiveColor 1.0 1.0 0.8 } geometry Box { size 0.08 0.40 0.30 } } ]
+    }
+    # Rear Red Warning Lights
+    Transform {
+      translation -2.61 0.95 0.70
+      children [ Shape { appearance PBRAppearance { baseColor 1.0 0.05 0.05 emissiveColor 1.0 0.05 0.05 } geometry Box { size 0.08 0.30 0.35 } } ]
+    }
+    Transform {
+      translation -2.61 -0.95 0.70
+      children [ Shape { appearance PBRAppearance { baseColor 1.0 0.05 0.05 emissiveColor 1.0 0.05 0.05 } geometry Box { size 0.08 0.30 0.35 } } ]
+    }
+    # 6 Heavy Duty Rubber Wheels
+    Transform {
+      translation 2.2 1.05 0.45
+      rotation 1 0 0 1.5708
+      children [ Shape { appearance PBRAppearance { baseColor 0.08 0.08 0.08 roughness 0.9 } geometry Cylinder { height 0.32 radius 0.45 } } ]
+    }
+    Transform {
+      translation 2.2 -1.05 0.45
+      rotation 1 0 0 1.5708
+      children [ Shape { appearance PBRAppearance { baseColor 0.08 0.08 0.08 roughness 0.9 } geometry Cylinder { height 0.32 radius 0.45 } } ]
+    }
+    Transform {
+      translation -0.9 1.05 0.45
+      rotation 1 0 0 1.5708
+      children [ Shape { appearance PBRAppearance { baseColor 0.08 0.08 0.08 roughness 0.9 } geometry Cylinder { height 0.32 radius 0.45 } } ]
+    }
+    Transform {
+      translation -0.9 -1.05 0.45
+      rotation 1 0 0 1.5708
+      children [ Shape { appearance PBRAppearance { baseColor 0.08 0.08 0.08 roughness 0.9 } geometry Cylinder { height 0.32 radius 0.45 } } ]
+    }
+    Transform {
+      translation -1.9 1.05 0.45
+      rotation 1 0 0 1.5708
+      children [ Shape { appearance PBRAppearance { baseColor 0.08 0.08 0.08 roughness 0.9 } geometry Cylinder { height 0.32 radius 0.45 } } ]
+    }
+    Transform {
+      translation -1.9 -1.05 0.45
+      rotation 1 0 0 1.5708
+      children [ Shape { appearance PBRAppearance { baseColor 0.08 0.08 0.08 roughness 0.9 } geometry Cylinder { height 0.32 radius 0.45 } } ]
+    }
+  ]
+  name "FIRE_ENGINE_001"
+}
