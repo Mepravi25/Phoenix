@@ -462,15 +462,63 @@ async def get_system_status():
     }
 
 
+offline_nodes_set: set[int] = set()
+
+
+def generate_5x5_grid_edges() -> List[Dict[str, Any]]:
+    edges = []
+    for node in range(25):
+        r, c = node // 5, node % 5
+        if c < 4:
+            edges.append({
+                "source": node,
+                "target": node + 1,
+                "from": node,
+                "to": node + 1,
+                "weight": 1.0,
+                "direction": "EW"
+            })
+        if r < 4:
+            edges.append({
+                "source": node,
+                "target": node + 5,
+                "from": node,
+                "to": node + 5,
+                "weight": 1.0,
+                "direction": "NS"
+            })
+    return edges
+
+
+@router.post("/traffic/nodes/{node}/blackout")
+async def simulate_node_blackout(node: int):
+    if not (0 <= node < 25):
+        raise HTTPException(status_code=400, detail=f"Invalid node ID: {node}")
+    offline_nodes_set.add(node)
+    logger.info(f"[BLACKOUT] Node {node} ({NODE_NAMES[node]}) set to OFFLINE")
+    return {"status": "success", "node": node, "offline": True, "message": f"Node {node} set to blackout"}
+
+
+@router.delete("/traffic/nodes/{node}/blackout")
+async def restore_node_from_blackout(node: int):
+    if not (0 <= node < 25):
+        raise HTTPException(status_code=400, detail=f"Invalid node ID: {node}")
+    offline_nodes_set.discard(node)
+    logger.info(f"[BLACKOUT] Node {node} ({NODE_NAMES[node]}) RESTORED to ONLINE")
+    return {"status": "success", "node": node, "offline": False, "message": f"Node {node} blackout restored"}
+
+
 def build_traffic_snapshot() -> Dict[str, Any]:
     telemetry = latest_telemetry if latest_telemetry else telemetry_engine.generate_payload()
     nodes = []
     for n in telemetry:
+        node_id = n.get("node", 0)
         queue_len = n.get("queue_length", 0)
         flush_t = n.get("flush_time", 0.0)
+        is_offline = node_id in offline_nodes_set
         nodes.append({
-            "id": n.get("node", 0),
-            "label": NODE_NAMES[n.get("node", 0)] if 0 <= n.get("node", 0) < len(NODE_NAMES) else f"Node {n.get('node', 0)}",
+            "id": node_id,
+            "label": NODE_NAMES[node_id] if 0 <= node_id < len(NODE_NAMES) else f"Node {node_id}",
             "queue_length": queue_len,
             "observed_flush_time": flush_t,
             "flush_time": flush_t,
@@ -478,20 +526,22 @@ def build_traffic_snapshot() -> Dict[str, Any]:
             "active_direction": n.get("active_direction", "NS"),
             "phase_remaining_ticks": n.get("phase_remaining_ticks", 5),
             "preemption_active": n.get("preemption_active", False),
-            "offline": False,
-            "color": "#22c55e" if queue_len < 5 else ("#f59e0b" if queue_len < 10 else "#ef4444")
+            "offline": is_offline,
+            "color": "#475569" if is_offline else ("#22c55e" if queue_len < 5 else ("#f59e0b" if queue_len < 10 else "#ef4444"))
         })
     tick = telemetry[0].get("simulation_tick", 0) if telemetry else 0
     amb_data = sim_bridge_ref.get_telemetry().get("ambulance") if sim_bridge_ref else None
     return {
         "nodes": nodes,
-        "edges": [],
+        "edges": generate_5x5_grid_edges(),
         "source": "webots_simulation",
         "mqtt_connected": True,
         "traffic_available": True,
         "traffic_stale": False,
         "simulation_tick": tick,
         "traffic_version": tick if tick > 0 else 1,
+        "offline_nodes": sorted(list(offline_nodes_set)),
+        "offline_node_count": len(offline_nodes_set),
         "reservation_control_ready": True,
         "ambulance": amb_data
     }

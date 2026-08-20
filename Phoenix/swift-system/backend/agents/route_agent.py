@@ -52,7 +52,7 @@ class RouteAgent:
         """
         try:
             simple_paths = list(nx.all_simple_paths(self.graph, source=start_junction, target=dest_junction))
-        except nx.NetworkXNoPath:
+        except Exception:
             return []
 
         candidates = []

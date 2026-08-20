@@ -46,10 +46,20 @@ def save_telemetry_to_disk(
         try:
             with os.fdopen(temp_fd, 'w', encoding='utf-8') as f:
                 json.dump(payload_dicts, f, indent=2)
-            os.replace(temp_path, LATEST_TELEMETRY_FILE)
+            try:
+                os.replace(temp_path, LATEST_TELEMETRY_FILE)
+            except OSError:
+                if os.path.exists(temp_path):
+                    try:
+                        os.remove(temp_path)
+                    except OSError:
+                        pass
         except Exception:
             if os.path.exists(temp_path):
-                os.remove(temp_path)
+                try:
+                    os.remove(temp_path)
+                except OSError:
+                    pass
             raise
 
         # Historical recording (configurable & OFF by default)

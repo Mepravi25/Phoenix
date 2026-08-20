@@ -107,6 +107,12 @@ const CITY_GRID_ROADS = INTERSECTIONS.flatMap((node) => {
     ...(row < 4 ? [[node, node + 5] as const] : []),
   ]
 })
+const GRID_EDGES: TrafficEdge[] = CITY_GRID_ROADS.map(([source, target]) => ({
+  source,
+  target,
+  weight: 1.0,
+  direction: Math.abs(source - target) === 1 ? 'EW' : 'NS',
+}))
 // One simulated second maps to one real second by default, keeping EV movement
 // aligned with the one-second traffic-light ticks from intersection_agent.py.
 // A deployment may lower this only when deliberately running a faster demo.
@@ -319,7 +325,7 @@ export default function Dashboard() {
         const position = adminGraphCoordinate(node.id)
         return { ...node, name: node.label, ...position, fx: position.x, fy: position.y }
       }),
-      links: (traffic?.edges ?? []).map((edge) => ({ ...edge })),
+      links: ((traffic?.edges && traffic.edges.length > 0) ? traffic.edges : GRID_EDGES).map((edge) => ({ ...edge })),
     }),
     [traffic],
   )
@@ -987,6 +993,9 @@ function AdminDashboard({
       } else {
         await api.post(`/api/traffic/nodes/${blackoutNode}/blackout`)
       }
+      const response = await api.get<TrafficSnapshot>('/api/traffic/snapshot')
+      setTraffic(response.data)
+      setTrafficStatus(statusFromSnapshot(response.data))
     } catch (error) {
       setBlackoutError(routeErrorMessage(error))
     } finally {
@@ -1136,7 +1145,8 @@ function AdminDashboard({
                     context.fillStyle = '#E2E8F0'
                     context.textAlign = 'center'
                     context.textBaseline = 'bottom'
-                    context.fillText(graphNode.label, graphNode.x ?? 0, (graphNode.y ?? 0) - radius - (3 / globalScale))
+                    const nodeLabelText = graphNode.offline ? `${graphNode.label} — OFFLINE` : graphNode.label
+                    context.fillText(nodeLabelText, graphNode.x ?? 0, (graphNode.y ?? 0) - radius - (3 / globalScale))
                   }}
                   nodeCanvasObjectMode={() => 'replace'}
                   nodeLabel={(node) => {
